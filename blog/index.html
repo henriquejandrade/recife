@@ -1,0 +1,33 @@
+---
+layout: default
+parent: ../..
+title: História do Povo do Recife
+metatitle: 🦀 História do Povo do Recife
+description: Reflexões sobre a história popular do Recife.
+cover-image: https://www.hnrqndrd.com/recife/images/cover.jpg
+---
+
+<div id="main-div">
+
+  <!-- Image -->
+  <img class="illustration" src="../images/cover.jpg" />
+  <p class="subtitle">
+  </p>
+
+  <p>Oi! Aqui eu reuno textos refletidos a partir das pesquisas realizadas no mapeamento da evolução urbana do Recife.
+    Terminei levantando muitas considerações sobre a história da cidade onde cresci e resolvi compartilhá-las! Se quiser
+    falar comigo, dá um oi lá no <a href="http://twitter.com/rickhenrique">Twitter</a>!
+  </p>
+
+  <h3>Textos</h3>
+
+  {% for page in site.pages reversed %}
+  {% if page.categories contains "historia" and page.categories contains "recife" %}
+  <div class="button thumbnail" href="{{ page.url }}">
+    <img src="{{page.cover-image}}" />
+    <p class="posttitle">{{ page.title }}</p>
+    <p class="postsubtitle">{{ page.date | date: "%d/%m/%Y" }}</p>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
