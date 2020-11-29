@@ -9,17 +9,17 @@ cover-image: https://www.hnrqndrd.com/recife/images/cover.jpg
 
 <div id="main-div">
 
-  <p>Aqui registro algumas notas rápidas refletidas ao longo do estudo. São textos curtos sem uma preocupação referencial e de formatação mas que eclodirão em novas partes do conteúdo geral!
-  </p>
+    <p>Aqui registro algumas notas rápidas refletidas ao longo do estudo. São textos curtos sem uma preocupação
+        referencial e de formatação mas que eclodirão em novas partes do conteúdo geral!
+    </p>
 
-  <h3>Notas</h3>
+    <h3>Notas</h3>
 
-  {% for page in site.pages reversed %}
-  {% if page.categories contains "nota" %}
-  <div class="button" href="{{ page.url }}">
-    <p class="posttitle">{{ page.title }}</p>
-    <p class="postsubtitle">{{ page.date | date: "%d/%m/%Y" }}</p>
-  </div>
-  {% endif %}
-  {% endfor %}
+    {% for page in site.pages reversed %}
+    {% if page.categories contains "nota" %}
+    <div class="button" href="{{ page.url }}">
+        <p>({{ page.date | date: "%d/%m/%Y" }}) {{ page.title }}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
 </div>
