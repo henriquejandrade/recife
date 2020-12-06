@@ -7,9 +7,9 @@ body, html {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
-    margin: 50pt 0 5pt 0;
+    margin: 20pt;
 }
 
 h2 {
@@ -34,12 +34,9 @@ a:visited {
     text-decoration: none;
 }
 
-p {
-    text-align: justify;
-}
-
 p.text {
     text-indent: 25pt;
+    text-align: justify;
     margin: 0;
     margin-bottom: 20pt;
 }
@@ -51,45 +48,49 @@ p.text {
 #top-bar {
     position: fixed;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 50pt;
+    height: 100pt;
     top: 0;
     overflow: hidden;
     z-index: 3;
     font-family: 'Patua One', cursive;
     color: #000000;
-    background: #EEEEEE;
-}
-
-#icon-top-bar {
-    float: left;
-    width: 50pt;
-    height: 100%;
-}
-
-#icon-img-top-bar {
-    height: 100%;
+    background: #DDD;
 }
 
 #top-bar-title {
-    float: left;
-    width: 100%;
-    height: 100%;
     display: flex;
-    margin: auto 0;
+    width: 100%;
+    height: 50%;
+    margin: 0;
     font-size: 1.5em;
 }
 
-#top-bar-title p {
+#top-bar-icon {
+    float: left;
+    height: 50pt;
+}
+
+#top-bar-subtitle {
+    background: #EEE;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#top-bar p {
+    text-align: center;
+    line-height: 50pt;
     margin: auto;
-    text-align: left;
 }
 
 #page-content {
     font-family: 'Crimson Text', serif;
     font-size: 20pt;
     position: absolute;
-    top: 50pt;
+    top: 100pt;
     overflow-y: auto;
     width: 100%;
 }
@@ -104,9 +105,10 @@ p.text {
 
 @media screen and (max-width: 800px) {
     .page-div {
+        width: 100%;
         height: 100%;
         padding: 16mm;
-        margin: 0;
+        margin: 0 auto;
     }
 }
 
@@ -124,9 +126,8 @@ p.text {
 }
 
 .chapter-title {
-    font-size: 2em;
-    text-align: center;
-    margin: 0;
+    font-size: 1.1em;
+    margin: 20pt;
 }
 
 .edition-date {
@@ -158,4 +159,74 @@ p.text {
     text-align: center;
     margin: 0;
     margin-bottom: 20pt;
+}
+
+.button {
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    background: #DDDDDD;
+    outline-style: solid;
+    outline-color: orangered;
+    outline-width: 0pt;
+    /*transition: outline-width 0.1s;*/
+    height: 50pt;
+    margin: 0 0 5pt 0;
+}
+
+.button:hover {
+    /*background: orangered;*/
+    outline-width: 3pt;
+}
+
+.button:active {
+    background: #EEEEEE;
+}
+
+.button:disabled {
+    background: #CCCCCC;
+}
+
+.button p {
+    /* font-family: 'Geometr415 Md BT', sans-serif; */
+    font-size: 0.8em;
+    color: #000000;
+    padding: 0 15pt;
+    margin: auto 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.button.thumbnail {
+    flex-direction: column;
+    height: 150pt;
+    margin-bottom: 25pt;
+}
+
+.button.thumbnail img {
+    object-fit: cover;
+    width: 100%;
+    height: 100pt;
+}
+
+.button.thumbnail .posttitle {
+    line-height: 30pt;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.button.thumbnail .postsubtitle {
+    font-size: 0.5em;
+    line-height: 20pt;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.footer {
+    font-size: 0.75em;
+    text-align: center;
+    color: #333;
+    margin: 50pt;
 }

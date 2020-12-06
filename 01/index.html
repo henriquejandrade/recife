@@ -1,0 +1,19 @@
+---
+layout: summaries
+parent: ..
+part: Parte 01
+title: Várzeas do Capibaribe
+metatitle: 🦀 Várzeas do Capibaribe
+description: Parte 01 do livro História do Povo do Recife.
+cover-image: https://www.hnrqndrd.com/recife/images/cover.jpg
+---
+
+{% for page in site.pages %}
+{% if page.categories contains "parte01" %}
+<div class="button thumbnail" href="{{ page.url }}">
+  <img src="{{page.cover-image}}" />
+  <p class="posttitle">{{ page.title }}</p>
+  <p class="postsubtitle">{{ page.date | date: "%d/%m/%Y" }}</p>
+</div>
+{% endif %}
+{% endfor %}
