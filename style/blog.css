@@ -259,12 +259,19 @@ img.pixelated {
     image-rendering: pixelated;
 }
 
-.illustration.align-right {
+img.illustration.align-right {
     float: right;
     width: 50%;
     margin-top: 25pt;
     margin-left: 15pt;
     margin-bottom: 15pt;
+}
+
+iframe.full-width {
+    border-radius: 0pt;
+    width: 100%;
+    min-height: 400px;
+    margin: 0;
 }
 
 div.align-right {
@@ -275,12 +282,18 @@ div.align-right {
 }
 
 @media screen and (max-width: 800px) {
-    .illustration.align-right {
+    img.illustration.align-right {
         display: block;
         width: 100%;
         float: none;
         margin: 0 auto;
         margin-top: 25pt;
+    }
+
+    iframe.full-width {
+        border-radius: 0pt;
+        width: 100%;
+        margin: 0;
     }
 
     div.align-right {
