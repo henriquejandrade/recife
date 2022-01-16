@@ -1,0 +1,33 @@
+<html>
+
+<head></head>
+
+<link  href="../scripts/viewerjs/viewer.css" rel="stylesheet">
+<script src="../scripts/viewerjs/viewer.js"></script>
+
+
+<script type="module">
+    // You should import the CSS file.
+    import '../scripts/viewerjs/viewer.css';
+    // import Viewer from 'viewerjs';
+
+    // View an image.
+    const viewer = new Viewer(document.getElementById('image'), {
+        inline: true,
+        viewed() {
+            viewer.zoomTo(1);
+        },
+    });
+    // Then, show the image by clicking it, or call `viewer.show()`.
+
+    // View a list of images.
+    // Note: All images within the container will be found by calling `element.querySelectorAll('img')`.
+    // const gallery = new Viewer(document.getElementById('images'));
+// Then, show one image by click it, or call `gallery.show()`.
+</script>
+
+<body>
+    <img class="map" id="image" src="res/1510 Americae sive qvartae orbis partis nova et exactissima descriptio.jpg" alt="Picture">
+</body>
+
+</html>
