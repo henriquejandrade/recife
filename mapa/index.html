@@ -1,23 +1,93 @@
----
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNZJJ1VFTW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PNZJJ1VFTW');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ page.title }}</title>
+
+    <meta name="description" content="{{page.description}}" />
+    <meta name="theme-color" content="#EEEEEE" />
+    <meta property="og:title" content="{{page.metatitle}}" />
+    <meta property="og:image" content="{{page.cover-image}}" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="hnrqndrd.com">
+    <meta name="twitter:creator" content="@rickhenrique">
+    <meta name="twitter:title" content="{{ page.metatitle }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="twitter:image" content="{{ page.cover-image }}">
+
+    <link href="https://www.historiadorecife.com/style/blog.css" rel="stylesheet">
+    <link href="https://www.historiadorecife.com/style/pages.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Noto+Sans+HK&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Patua+One&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://www.hnrqndrd.com/style/markdown.css" rel="stylesheet"> -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://www.historiadorecife.com/scripts/pages.js"></script>
+</head>
+
+
+<body>
+    <div id="top-bar">
+        <div id="icon-top-bar" class="nav-button">
+            <img id="icon-img-top-bar" class="icon clickable" href="{{ page.parent }}"
+                src="https://www.historiadorecife.com/icons/symbols/arrow_left.png" />
+        </div>
+        <div id="top-bar-title">
+            <p>{{ page.title }}</p>
+        </div>
+    </div>
+    <div id="page-content">
+        <div id="top-bar">
+            <div id="icon-top-bar" class="nav-button">
+                <img id="icon-img-top-bar" class="icon clickable" href="{{ page.parent }}"
+                    src="https://www.historiadorecife.com/icons/symbols/arrow_left.png" />
+            </div>
+            <div id="top-bar-title">
+                <p>Mapas</p>
+            </div>
+        </div>
+
+        <div id="page-content">
+            <div id="main-div">
+                <!-- <img class="map" id="image" width="100" height="100"
+                    src="res/1510 Americae sive qvartae orbis partis nova et exactissima descriptio.jpg" alt="Picture">
+                <img class="map" id="image" width="100" height="100" src="res/1609.png" alt="Picture"> -->
+sdfisodif
+                <img class="illustration clickable" src="../images/14/01.png" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+
 layout: default
 parent: ../
 title: Mapas | História do Povo do Recife
 metatitle: 🦀 Mapas
 description: Coleção de Mapas Históricos da Cidade do Recife
 cover-image: https://www.hnrqndrd.com/recife/images/cover.jpg
----
 
-<div id="top-bar">
-    <div id="icon-top-bar" class="nav-button">
-        <img id="icon-img-top-bar" class="icon clickable" href="{{ page.parent }}"
-            src="https://www.hnrqndrd.com/icons/symbols/arrow_left.png" />
-    </div>
-    <div id="top-bar-title">
-        <p>Mapas</p>
-    </div>
-</div>
-
-<div id="page-content">
-    <div id="main-div">
-    </div>
-</div>
+-->
