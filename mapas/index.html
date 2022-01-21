@@ -8,19 +8,11 @@ cover-image: https://www.hnrqndrd.com/recife/images/cover.jpg
 ---
 
 <div id="main-div">
-    <a href="1510.html">
-        <img class="thumb" src="res/thumb/1510.jpg" alt="1510">
+    {% for page in site.pages %}
+    {% if page.categories contains "mapa" %}
+    <a href="{{ page.map }}.html">
+        <img class="thumb" src="res/thumb/{{ page.map }}.jpg" alt="{{ page.map }}">
     </a>
-    <a href="1609.html">
-        <img class="thumb" src="res/thumb/1609.jpg" alt="1609">
-    </a>
-    <a>
-        <img class="thumb" src="res/thumb/1639.jpg" alt="1639">
-    </a>
-    <a href="1640.html">
-        <img class="thumb" src="res/thumb/1640.jpg" alt="1640">
-    </a>
-    <a href="1664.html">
-        <img class="thumb" src="res/thumb/1664.jpg" alt="1664">
-    </a>
+    {% endif %}
+    {% endfor %}
 </div>
