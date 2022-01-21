@@ -1,81 +1,16 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+parent: ../..
+title: Mapas Históricos do Recife
+metatitle: 🦀 Mapas Históricos do Recife
+description: Coleção de mapas históricos do Recife.
+cover-image: https://www.hnrqndrd.com/recife/images/cover.jpg
+---
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapas</title>
-
-    <link href="../style/blog.css" rel="stylesheet">
-    <link href="../style/maps.css" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Patua+One&family=Ubuntu&display=swap"
-        rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://www.historiadorecife.com/scripts/pages.js"></script>
-
-    <!-- Map Viewer https://github.com/fengyuanchen/viewerjs -->
-    <link href="../scripts/viewerjs/viewer.css" rel="stylesheet">
-    <script src="../scripts/viewerjs/viewer.js"></script>
-</head>
-
-<script type="module">
-    $('.thumb').click(function (event) {
-        const viewer = new Viewer($(this)[0], {
-            toolbar: {
-                zoomIn: 4,
-                zoomOut: 4,
-                oneToOne: 4,
-                reset: 4,
-                prev: false,
-                play: false,
-                next: false,
-                rotateLeft: false,
-                rotateRight: false,
-                flipHorizontal: false,
-                flipVertical: false,
-            },
-            navbar: false,
-            rotatable: false,
-            url(image) {
-                var alt = image.alt;
-                return 'res/' + alt + '.jpg';
-            },
-            show(immediate = true) { },
-        });
-    });
-</script>
-
-<body>
-    <div id="top-bar">
-        <div id="top-bar-title">
-            <p>🦀 Mapas</p>
-        </div>
-    </div>
-
-    <!--#region Content -->
-    <div id="mappage-content">
-        <div id="mappage-main">
-            <img class="thumb" src="res/thumb/1510.jpg" alt="1510">
-            <img class="thumb" src="res/thumb/1609.jpg" alt="1609">
-            <img class="thumb" src="res/thumb/1639.jpg" alt="1639">
-            <img class="thumb" src="res/thumb/1640.jpg" alt="1640">
-            <img class="thumb" src="res/thumb/1664.jpg" alt="1664">
-        </div>
-        <!--#endregion-->
-
-        <!--#region Bottom bar-->
-        <!-- <div id="bottom-bar">
-            <div id="bottom-bar-title">
-                <p>{{ page.maptitle }}</p>
-            </div>
-            <div id="bottom-bar-subtitle">
-                <p>{{ page.mapsubtitle }}</p>
-            </div>
-        </div> -->
-        <!--#endregion-->
-    </div>
-</body>
-
-</html>
+<div id="main-div">
+    <img class="thumb" src="res/thumb/1510.jpg" href="1510.html" alt="1510">
+    <img class="thumb" src="res/thumb/1609.jpg" href="1609.html" alt="1609">
+    <img class="thumb" src="res/thumb/1639.jpg" alt="1639">
+    <img class="thumb" src="res/thumb/1640.jpg" href="1640.html" alt="1640">
+    <img class="thumb" src="res/thumb/1664.jpg" href="1664.html" alt="1664">
+</div>
