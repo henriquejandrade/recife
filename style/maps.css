@@ -1,41 +1,73 @@
-#mappage-content {
-    position: absolute;
-    top: 50pt;
-    overflow-y: auto;
-    width: 100%;
-}
+@media screen and (min-width: 800px) {
+    #mappage-content {
+        position: absolute;
+        top: 50pt;
+        overflow-y: auto;
+        width: 100%;
+    }
 
-#mappage-main {
-    margin: 0;
-}
+    #map-container {
+        position: fixed;
+        width: 75%;
+        height: 100%;
+        background-color: white;
+        color: white;
+    }
 
-#map-container {
-    position: fixed;
-    width: 75%;
-    height: 100%;
-    background-color: white;
-    color: white;
-}
+    #map-details {
+        position: fixed;
+        left: 75%;
+        right: 0;
+        height: 100%;
+        background-color: #DDDDDD;
 
-#map-details {
-    position: fixed;
-    left: 75%;
-    right: 0;
-    height: 100%;
-    background-color: #DDDDDD;
+        font-family: 'Patua One', cursive;
+        font-size: 0.8em;
+        color: #000000;
 
-    font-family: 'Patua One', cursive;
-    font-size: 0.8em;
-    color: #000000;
-
-    border-style: solid;
-    border-color: orangered;
-    border-width: 0pt 0pt 0pt 4pt;
-    padding: 15pt;
+        border-style: solid;
+        border-color: orangered;
+        border-width: 0pt 0pt 0pt 4pt;
+        padding: 15pt;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    #mappage-main {
-        max-width: 90%;
+    #mappage-content {
+        position: absolute;
+        top: 50pt;
+        bottom: 0;
+        width: 100%;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #map-container {
+        position: relative;
+        width: 100%;
+        height: 65%;
+        background-color: white;
+        color: white;
+    }
+
+    #map-details {
+        position: relative;
+        width: 100%;
+        height: 35%;
+        background-color: #DDDDDD;
+
+        font-family: 'Patua One', cursive;
+        font-size: 0.8em;
+        color: #000000;
+        overflow: auto;
+
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: orangered;
+        border-width: 4pt 0pt 0pt 0pt;
+        padding: 15pt;
+
+        margin: 0;
     }
 }
