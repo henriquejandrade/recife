@@ -10,8 +10,11 @@ cover-image: https://www.hnrqndrd.com/recife/images/cover.jpg
 <div id="main-div">
     {% for page in site.pages %}
     {% if page.categories contains "mapa" %}
-    <a href="{{ page.map }}.html">
-        <img class="thumb" src="res/thumb/{{ page.map }}.jpg" alt="{{ page.map }}">
+    <a class="image-button" href="{{ page.map }}.html">
+        <div>
+            <img class="thumb" src="res/thumb/{{ page.map }}.jpg" alt="{{ page.map }}">
+            <p>{{ page.map }}</p>
+        </div>
     </a>
     {% endif %}
     {% endfor %}

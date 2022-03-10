@@ -185,6 +185,38 @@ hr {
     overflow: hidden;
 }
 
+.image-button {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background: #EEEEEE;
+    outline-style: solid;
+    outline-color: orangered;
+    outline-width: 0pt;
+    width: 150px;
+    height: 200px;
+    margin: 5pt;
+}
+
+.image-button:hover {
+    outline-width: 3pt;
+}
+
+.image-button:active {
+    background: #FFFFFF;
+}
+
+.image-button div {
+    width: 150px;
+    height: 200px;
+}
+
+.image-button p {
+    font-size: 0.75em;
+    text-align: center;
+    margin: 0;
+}
+
 .left {
     float: left;
 }
