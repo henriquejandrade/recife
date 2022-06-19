@@ -36,7 +36,9 @@
 
     <link href="../style/blog.css" rel="stylesheet">
     <link href="https://www.hnrqndrd.com/style/pages.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Patua+One&family=Ubuntu&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Patua+One&family=Ubuntu&display=swap"
+        rel="stylesheet">
     <link href="https://www.hnrqndrd.com/style/markdown.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -44,63 +46,1347 @@
 </head>
 
 <body>
+    <style>
+        mark {
+            font-weight: bold;
+        }
+
+        /* diretoria */
+        mark.blue {
+            background-color: #7373FF;
+        }
+
+        /* alfandega */
+        mark.orange {
+            background-color: #FFB973;
+        }
+
+        /* caminhos */
+        mark.yellow {
+            background-color: #FFFF73;
+        }
+
+        /* recursos humanos */
+        mark.purple {
+            background-color: #B973FF;
+        }
+
+        /* alojamentos */
+        mark.red {
+            background-color: #FF7373;
+        }
+
+        /* área de lazer */
+        mark.pink {
+            background-color: #FF73FF;
+        }
+
+        /* fábrica */
+        mark.green {
+            background-color: #73FF73;
+        }
+    </style>
+
     <div id="top-bar">
         <div id="icon-top-bar" class="nav-button">
-            <img id="icon-img-top-bar" class="icon clickable" href="{{ page.parent }}" src="https://www.hnrqndrd.com/icons/symbols/arrow_left.png" />
+            <img id="icon-img-top-bar" class="icon clickable" href="{{ page.parent }}"
+                src="https://www.hnrqndrd.com/icons/symbols/arrow_left.png" />
         </div>
         <div id="top-bar-title">
-            <p>A Identidade Nacional</p>
+            <p class="text">A Cidade-Fábrica</p>
         </div>
     </div>
     <div id="page-content">
         <div id="main-div">
-            <p class="text">Concluindo a sequência dos dois últimos textos, neste terceiro comentarei o contexto do início das relações Luanda-Recife e como elas se desenrolaram.</p>
+            <p class=title>🦀 A Cidade-Fábrica</p>
 
-            <p class="section-divider">⚔️⚔️⚔️</p>
-
-            <h1>🦀 Invasão Holandesa</h1>
-            
+            <!-- intro -->
             <p class="text">
-               A vida na vila de Olinda era uma maravilha, mas só se você fizesse parte do seleto grupo de portugueses & amigos. Caso você fosse parte do povo, aí você ia era suar de carregar fardo de açúcar pra fazer riqueza aos portugueses de Olinda. 
+                Quando escolhi que essa coleção possuísse "do povo" em seu título quis me motivar a sempre que fosse
+                escrever procurasse analisar os eventos históricos a partir da ótica do povo de sua época, consultando
+                fontes que fujam da narração das camadas dominantes. Deixo isso claro porque em cada novo texto tento
+                continuar uma sequência temporal. Mesmo quando falo da história do bolo de rolo, tento encaixar o tema
+                dentro da linha do tempo que conta a história do povo do Recife. Nessa lógica, devo tratar nesse texto
+                da
+                ocupação holandesa... MAS vamos aproveitar esse período da história que desperta nos recifenses (e
+                talvez
+                nos brasileiros como um todo) grande curiosidade para analisar as características da construção da
+                cidade e
+                como ela se configurou para se tornar o braço alfandegário de uma fábrica gigante de açúcar.
+            </p>
+
+            <p class="text">
+                O que conhecemos como cidade do Recife hoje foi criada em cima de uma lógica de produção, de fábrica,
+                para
+                facilitar o armazenamento e exportação dos bens produzidos em Pernambuco. Vamos caminhar por essa
+                alfândega,
+                identificando seus setores, seus trabalhadores e seus patrões. O que pensavam os funcionários dessa
+                empresa?
+                E essa empresa deixou de existir? E se a cidade ainda for uma fábrica? Você, enquanto funcionário da
+                <i>Pernambuco Company</i>, o que pensaria de viver numa alfândega?
+            </p>
+
+            <blockquote>Para mais detalhes antecedentes, confira os textos anteriores! Há sugestões de alguns
+                relacionados no fim da página.</blockquote>
+
+            <!-- título -->
+            <h1>A Cidade-Fábrica</h1>
+
+            <p class="signature">por <b>{{author}}</b> em <b>{{ date | date: "%d/%m/%Y" }}</b>.</p>
+
+            <!-- primeira parte -->
+            <p class="text">
+                Apesar da palavra "fábrica" remeter logo àquele prédio cinza ou de tijolos aparentes com chaminés dos
+                tempos
+                da revolução industrial, precisamos voltar um pouco no tempo para desenhar o contexto da
+                "cidade-fábrica".
+                Um pouco de retrospectiva colonial primeiro. 💀
+            </p>
+
+            <!-- Image -->
+            <img class="illustration" src="../images/15/01.jpg" />
+            <p class="subtitle">Goa (1595) e Olinda (1665).</p>
+
+            <p class="text">
+                As imagens acima são a cidade de Goa e Olinda na transição dos séculos 16 para o 17. As ruas curvas se
+                juntando com ruas retas, casinhas rodeando quintais, estruturas para proteção, igrejas, e até estruturas
+                com o mesmo nome: as duas cidades tem uma "Misericórdia", as duas tem uma "Rua Direita". Isso aconteceu
+                porque a cruzada portuguesa no Oriente se repetiu no Brasil. Fundaram em Goa uma "feitoria", uma
+                cidade-armazém fortificada de onde a produção extorquida dos locais era estocada para ser transportada
+                ao reino apertadinho de Portugal. Da mesma forma, fundaram feitorias em Fernando de Noronha, Igarassu e
+                outros locais.
+            </p>
+
+            <blockquote>O texto "A Identidade Nacional" discute o modo de colonização portuguesa. Link no fim da página!
+            </blockquote>
+
+            <p class="text">
+                Essas feitorias portuguesas eram administradas pelas casas de comércio e pelas sedes do governo que
+                ficavam sempre em regiões altas com visão privilegiada para o porto e para o mar. Esse é o jeitinho de
+                construção
+                português™ [1]. Foi assim com Olinda: as mais antigas construções da cidade são os casarões da população
+                mais próxima do rei, casarões de estrangeiros fazendo "negócios" em Pernambuco ou das muitas instalações
+                da
+                igreja católica, politicamente influentes e prestadores dos serviços de ociosidade religiosa para os
+                moradores da vila de Olinda & Região. Inclusive, as casas de Olinda são até hoje famosas pelos seus
+                quintais
+                onde os ricos e religiosos 🌻 frugalmente 🌻 cultivavam seus pomares e hortas [2].
+            </p>
+
+            <!-- Image -->
+            <img class="illustration" src="../images/15/02.jpg" />
+            <p class="subtitle"></p>
+
+            <p class="text">
+                A disposição das casas em Olinda se dá em torno de largos, pátios e mirantes até hoje presentes nos
+                bairros
+                da cidade velha; Havia um sistema de abastecimento de água já nos primeiros séculos de ocupação cujas
+                bicas
+                também existem até hoje; Havia também um sistema de defesa que mantinha fora da cidade os entes
+                "indesejáveis". Caeté? Pss pula fora. Essas e outras características permitiam uma vida urbana melhor
+                desenhada para o bem estar das famílias colonizadoras. Entretanto, em uma visão macro, essa vila
+                funcionava,
+                na realidade, como a diretoria de uma empresa e dispunha dos itens necessários para o <i>sleepover</i>
+                dessas
+                famílias. Que empresa é essa?
+            </p>
+        </div>
+
+        <!-- Image -->
+        <img class="full-illustration clickable" src="../images/15/03.jpg"
+            out-href="https://gallica.bnf.fr/ark:/12148/btv1b8596724g/f1.item.r=Olinda.zoom" />
+        <p class="subtitle">Ilustração do Recife durante a tomada dos holandeses.</p>
+
+        <div id="main-div">
+            <p class="text">
+                A vila do Recife ficava a uma milha náutica de Olinda, na última curva do Beberibe. Apesar de já
+                habitada
+                por uma população de pescadores, ela só veio a crescer para que se pudessem atender aos serviços do
+                porto de
+                forma mais eficaz e ágil. O açúcar, o pau-brasil e outros produtos eram trazidos em canoas pelos rios ou
+                pelos caminhos de terra para serem armazenados nos galpões da vila que era conhecida como "povo" ou como
+                "porto de
+                Pernambuco". Ela servia como uma alfândega muito improvisada cujos escritórios administrativos ficavam
+                em
+                Olinda. Um sistema de segurança das mercadorias do porto demorou a ser implementado: o terreno do porto
+                "no
+                nível do mar" era muito estranho aos costumes urbanos dos portugueses. Mesmo com a <b>
+                    invasão inglesa do
+                    Recife
+                    em 1609
+                </b> que estimulou um melhoramento das estruturas de defesa, tudo só veio a mudar mesmo com a
+                <b>invasão holandesa</b>.
+            </p>
+
+            <blockquote>O texto "Quando a Inglaterra invadiu Pernambuco" conta esse episódio hoje alegorizado por
+                piratas em um famoso passeio de Catamarã. Link no fim da página 👇</blockquote>
+
+            <p class="section-divider">●●●</p>
+
+            <h2>Perdeu tudo: O DRAMA dos portugueses</h2>
+            <h3>Uma ópera entre colonizadores</h3>
+
+        </div>
+
+        <!-- Image -->
+        <img class="full-illustration clickable" src="../images/15/04.jpg"
+            out-href="https://gallica.bnf.fr/ark:/12148/btv1b531968670/f1.item.r=Olinda.zoom" />
+        <p class="subtitle">Percurso da invasão holandesa, da praia de Pau Amarelo (na direita) até o Recife (na
+            esquerda).</p>
+
+        <div id="main-div">
+            <p class="text">
+                Primeiro, os holandeses desembarcaram na praia de Pau Amarelo. Em direção à Olinda, atravessaram a
+                trancos e
+                barrancos o terreno alagado e todo cortado por rios e riachos, onde um deles é o Rio Doce. Foram
+                caminhando pela praia
+                avistando o morro lá longe. Emboscadas de tropas de nativos aliados dos portugueses foram organizadas,
+                mas
+                falharam. No fim das contas, invasores davam força a um sentimento de libertação do julgo português,
+                julgo esse que não convencia nem a todos os "aliados" nativos. Os invasores holandeses relataram toda a
+                caminhada até Olinda em detalhes, onde contam que muitos guerrilheiros nativos simplesmente davam meia
+                volta
+                à mata, ou apontavam o caminho para Olinda [3].
+            </p>
+
+            <p class="text">
+                Nenhuma das tentativas locais de defesa vingou e os holandeses alcançaram Olinda. O que aconteceu
+                imediatamente antes deles chegarem à vila é um dos maiores eventos da história de Olinda na MINHA
+                opinião (maior do que o carnaval
+                de 2018). Assim que a população da vila se convenceu de que nada pararia os holandeses, todos entraram
+                em
+                um desespero coletivo, uma catarse épica que foi descrita por autores diferentes.
+            </p>
+
+            <blockquote>
+                O livro de Evaldo Cabral de Mello "O Brasil Holandês" apresenta uma ótima síntese introdutória dos
+                textos (que eu uso como referência nesse).
+            </blockquote>
+
+            <p class="text">
+                Em Olinda a essa altura do combate contra os invasores só havia restado a gente rica. Seus escravos já
+                haviam sido mandado para a linha de frente da guerra muitas horas antes e nada surtia efeito. Então
+                chegou a
+                hora dos brancos, jovens ou velhos, pegarem em armas. Há relatos de pais emocionados beijando as esposas
+                e
+                suas crianças pois não sabiam se retornariam, há relatos de famílias que deixaram o jantar preparado
+                para
+                quando os maridos e filhos retornassem, entre outros dramas. Mais uma vez, nenhum efeito foi surtido.
+                Momentos antes da entrada dos holandeses pelo norte da cidade velha, o Amparo, as pessoas que haviam
+                ficado
+                começaram desesperadamente a reunir o que podiam carregar de valor em seu corpo e suas roupas e
+                começaram a
+                correr pelas ruas em direção às matas que até hoje envolvem Olinda velha. Mais uma vez os relatos contam
+                as
+                madames deixando cair suas pérolas indianas pelas ruas, as pratas africanas pelos matagais, senhoras com
+                os
+                peitos arranhados por espinhos, donzelas desmaiadas, donzelos chorando, "o marido não sabia da mulher,
+                nem a
+                mãe [sabia] dos filhos e filhas" e tantas outras cenas desesperadoras que remetem ao imaginário popular
+                do
+                <b>estouro de Tapacurá</b>.
+            </p>
+
+            <p class="text">
+                Só é engraçado porque é o desespero dos colonizadores. A descrição é muito particular e eu pessoalmente
+                <b>adoro</b> ler de tempos em tempos. Ainda soa muito como uma grande baixaria dos dias de hoje. Outro
+                exemplo aconteceu na invasão
+                holandesa à Paraíba, onde há relatos de portugueses gritando "Flamengo cornudo!" e sendo respondidos
+                por holandeses gritando "Espanhol cornudo!". Enfim, um fuxico que parece melhor descrever uma guerra do
+                que
+                as pataquadas sem tamanho de <i>Hollywood</i>.
+            </p>
+
+            <p class="text">
+                Quando os holandeses chegaram na vila abandonada, o próprio circo da noite do terror do Mirabilândia, só
+                precisaram saquear e botar fogo em Olinda. A cidade veio abaixo. Poucas construções resistiram, como o
+                prédio do atual Casbah, próximo ao Carmo. O próximo passo holandês foi descer para o porto, que agora
+                não
+                havia como resistir. Ataques por terra e pelo mar garantiram o Recife aos holandeses que, numa
+                estratégia
+                tão eficiente que parece ter sido explanada por algum X-9, neutralizaram todo o litoral recifense do
+                domínio
+                português. Os navios entraram e o porto foi tomado. Fim da ópera.
+            </p>
+
+            <p class="section-divider">🔥🔥🔥</p>
+
+            <h2><tt>ARQVITECTVRA ET URBANISMVS</tt></h2>
+
+            <p class="text">
+                VOLTANDO ao assunto. Os Portugal já haviam desenhado um esquema para a produção do porto. Os Holanda foi
+                lá
+                e se apropriou. Após o estabelecimento da administração holandesa (que demorou alguns meses), a vila do
+                porto continuou a ser vila, e a sede da administração foi transferida de Olinda para a <b>ilha de
+                    Antônio Vaz</b>,
+                que é a ilha dos atuais bairros de Santo Antônio e São José.
+            </p>
+
+            <!-- Image -->
+            <img class="illustration" src="../images/15/05_1630.png" />
+            <p class="subtitle"></p>
+
+            <p class="text">
+                O espaço físico onde ficavam a casa do governador holandês, o palácio do governo e seus jardins é o
+                mesmo
+                espaço hoje designado pelo bairro de Santo Antônio. Nas áreas de parte de Santo Antônio e do bairro de
+                São
+                José passaram a se estabelecer os serviços de apoio à vida comum holandesa, incluindo um pátio onde
+                ocorria
+                a feira (o espaço da atual praça do Diário). Na vila, pouco a pouco os pescadores foram substituídos por
+                homens de negócio dos comércios holandeses. Muitos deles eram protestantes e judeus, o que caracterizava
+                pra
+                eles (e pra alguns historiadores ainda hoje) uma "sociedade de convivência plural"... só porque não eram
+                todos católicos kk ! Uma cidade para todes ! (menos para negres).
+            </p>
+
+            <p class="text">
+                As pessoas racializadas continuaram subjulgadas ao serviço braçal e doméstico. Indígenas que não
+                se adaptavam à vida entre brancos ou eram enviados a uma <b>aldeia</b>, uma instituição jesuíta
+                localizada fora da
+                convivência da cidade onde os nativos eram "educados" para a vida urbana, ou eram expulsos para o
+                interior.
+            </p>
+
+            <p class="text">
+                A partir 👇daqui👇 no texto já começamos a observar espaços físicos dos tempos coloniais muito
+                característicos de uma fábrica mesmo. Olinda e a Mauritsstaad como sendo a <mark
+                    class="blue">diretoria</mark> da fábrica, os
+                armazéns do Recife como <mark class="orange">alfândega</mark>, a aldeia como os <mark
+                    class="purple">recursos humanos</mark> e <mark class="red">alojamento</mark>
+                da fábrica,
+                mas não se limitando a esses espaços. Outros ainda são muito pertinentes como a <mark
+                    class="green">fábrica</mark>
+                propriamente
+                dita (os espaços de produção), as <mark class="pink">áreas de lazer</mark> e os <mark
+                    class="yellow">caminhos</mark> que interligavam esses
+                espaços.
+            </p>
+
+            <p class="text">
+                Do estabelecimento da "Cidade Maurícia" até os dias atuais, grandes mudanças hegemônicas atingiram
+                Pernambuco, mas a exploração nunca acabou. <b>Não houve uma ruptura sequer desse conflito de classes</b>
+                que
+                pudesse refletir em como a cidade se organiza. A nossa cidade apareceu e é mantida até hoje como uma
+                empresa, como uma fábrica. Em contraste, as cidades dos nossos colonizadores e de outros locais do mundo
+                apareceram como pontos de comércio, como paragens para viajantes, como portos para receber matéria-prima
+                etc. <b>Nossas vidas são parte de uma linha de produção</b>: criança na escola, adulto como mão de obra,
+                e depois
+                o descarte. A organização da vida dessa forma é uma ideia moderna que tem o liberalismo como eixo
+                estrutural. MAS, presenciamos contraposições a essas ideias também, como
+                quando da revolução de São Tomé, do Haiti e da revolução de 1917.
+            </p>
+
+            <blockquote>
+                O texto "Kalungas - São Tomé" conta dessa revolução e seus desdobramentos em Pernambuco. Link ali: no
+                fim da página.
+            </blockquote>
+
+            <p class="text">
+                A partir da próxima seção, vamos dividir a história do Recife em três partes, três colonizações, que nos
+                ajudam a entender cada vício que os poderes carregam ao longo dos tempos e analisar os espaços da
+                cidade-fábrica em cada uma das partes. São elas o <b>Recife português-holandês</b>, o <b>Recife
+                    inglês</b> e o
+                <b>Recife <i>americano</i></b>.
+            </p>
+
+            <p class="section-divider">🌾🌾🌾</p>
+
+            <h3>A empresa portuguesa</h3>
+
+            <p class="text">
+                Não havia UMA estrutura na cidade cuja função não fosse a produção e escoamento de mercadorias: da
+                <mark class="blue">diretoria</mark> localizada nos casarões de Olinda, nos palácios da "Mauriceia" e nas
+                casas-grandes,
+                até as
+                <mark class="green">fábricas</mark> das fazendas e engenhos de açúcar. Para que a produção de magnitude
+                continental se
+                mantivesse
+                funcionando, milhares de vidas foram exploradas. Como naquela época a "robótica" ainda não havia
+                aparecido
+                para disfarçar o racismo da ideia que "algumas pessoas existem para servir", havia instituições
+                explicitamente dedicadas a disciplinar e doutrinar a massa de escravizados cativos e de rebeldes
+                detratores.
+                Eram elas, respectivamente, a senzala para negros e indígenas que servia como o <mark
+                    class="red">alojamento</mark> dos
+                trabalhadores da cidade-fábrica, e o pelourinho para negros e indígenas ou a aldeia exclusivamente para
+                os
+                indígenas como os <mark class="purple">recursos humanos</mark> dessa empresa.
+            </p>
+
+            <!-- Image -->
+            <img class="illustration" src="../images/15/05_1665.png" />
+            <p class="subtitle">A sede do governo holandês na ilha de Antônio Vaz era conhecida por Cidade Maurícia, ou
+                <i>Mauritsstaad</i> na língua deles.
+            </p>
+
+            <p class="text">
+                Como os escravizados eram tratados como mercadorias, assim como objetos, eles possuiam também espaços e
+                regras dedicadas a sua "regulação" na <mark class="orange">alfândega</mark>.
+            </p>
+
+            <!-- Image -->
+            <img class="illustration clickable" src="../images/15/06_wagner.png"
+                out-href="https://www.akg-images.de/archive/Tierbuch-2UMDHU2Z057.html" />
+            <p class="subtitle">O mercado negro da Rua do Bom Jesus. Pintura por Zacharias Wagner (1634).
+            </p>
+
+            <p class="text">
+                Os africanos que chegavam pelo porto do Recife eram "estocados" em literais armazéns de gente na vila.
+                De
+                lá eram agrupados como animais em exposição na atual Rua do Bom Jesus, que era o mercado de negros do
+                Recife
+                (aspecto completamente apagado daquela rua) [4]. Porém, nem todos os negros que conseguiam desembarcar
+                em
+                Pernambuco seriam vendidos nesse mercado. Aliás, a maioria já era
+                encomendada com destinatário certo, contados como gado. "43 negros para Baltazar da Fonseca" diz o
+                relatório
+                com os valores da compra realizada por Baltazar, um judeu sócio dos senhores holandeses, cujos braços
+                "comprados" construíram a primeira ponte do Recife.
+            </p>
+
+            <!-- Image -->
+            <img class="illustration" src="../images/15/07_balthazar.jpg" />
+            <p class="subtitle">Trecho do contrato de compra de Balthazar da Fonseca. Em 1641 ele comprou 43 homens de
+                Elmina, Ardra e Calabar para a construção da ponte do Recife [5].
+            </p>
+
+            <p class="text">
+                Muitos inclusive não conseguiam completar a travessia. Os que desembarcassem mas morressem durante os
+                primeiros momentos no porto tinham seus corpos descartados em vala
+                comum em algum ponto do Recife Antigo, onde tal cemitério popularmente se acredita ser onde hoje está a
+                Cruz
+                do Patrão, mas que talvez seja em um ponto mais ao norte [6].
+            </p>
+
+            <p class="text">
+                Para a punição dos rebeldes, havia o pelourinho. Um pilar de cimento ou madeira erguido no centro da
+                vila
+                (o de Recife ficava próximo ao atual Marco Zero) onde os escravizados eram amarrados para uma exibição
+                pública de violência tanto para o divertimento branco, como para a educação preta, semelhante e
+                antecessor
+                aos "linchamentos" que ocorreram nos Estados Unidos.
             </p>
 
             <!-- Image -->
             <div class="align-right">
-                <img class="illustration clickable" src="../images/14/01.png" out-href="https://www.atlasofmutualheritage.nl/nl/Kaart-deel-Afrika.7762" />
-                <p class="subtitle">Uma criança brinca com um compasso em uma ilustração decorativa no recorte do mapa da África de 1635 do holandês Wilhelm Blaeu.</p>
+                <img class="illustration clickable" src="../images/15/08_barroco.jpg"
+                    out-href="https://pt.wikipedia.org/wiki/Igreja_de_Nossa_Senhora_da_Miseric%C3%B3rdia_(Olinda)" />
+                <p class="subtitle">Detalhe do imponente altar na igreja da Misericórdia em Olinda.
+                </p>
             </div>
 
-            
+            <p class="text">
+                A igreja católica servia aqui como pilar da violência contra os povos racializados, trazendo
+                justificativas
+                filosóficas para a subjulgação dos escravizados, mantendo o lucro dos senhores, e participando com seus
+                padres e freiras na doutrinação
+                dos
+                escravizados detratores. Sua ideologia estava presente nas mentes da cidade-fábrica e se materializava
+                durante as
+                missas:
+                só os brancos as assistiam do lado de dentro da igreja, enquanto os escravizados ficavam ao fundo ou
+                fora dela. Ao mesmo tempo que a igreja segurava a espada, ela
+                segurava
+                a cruz. Ela era uma das <mark class="pink">áreas de lazer</mark> e ócio dos senhores. No centro do
+                Recife várias igrejas foram
+                construídas e cada uma tinha seu horário de missa, permitindo às famílias dos senhores quais horários
+                atender e para qual santo se devotar. Além disso, havia capelas pelas fazendas com padres ordenados pela
+                diocese para que os senhores e suas famílias pudessem pedir a papai do céu "que perdoassem os ingênuos
+                racializados" 🙏</p>
+
+            <p class="text">
+                A igreja demonstrava seu poder também
+                arquitetonicamente. O estilo barroco comum nas colônias portuguesas posicionava as igrejas como
+                imponentes
+                estruturas urbanas de propaganda branca. Os protestantes e judeus eram mais discretos no que toca a
+                manifestação religiosa, mas igualmente essas pessoas nada fizeram a não ser a continuação da subjulgação
+                cultural para a justificação da escravidão (e produção colonial).
+            </p>
+
+            <img class="illustration clickable" src="../images/15/09_jardins.png"
+                out-href="https://www.atlasofmutualheritage.nl/nl/Plattegrond-tuinen-bij-paleis-Vrijburg.7506" />
+            <p class="subtitle">Trecho do plano do palácio de Maurício de Nassau, sede da administração holandesa, e
+                seus jardins exuberantes ao redor.
+            </p>
+
+            <p class="text">
+                As tradições urbanas para as <mark class="pink">áreas de lazer</mark> protestantes se davam de outras
+                formas.
+                Os jardins dos palácios eram utilizados como vitrines da grandeza do império da Holanda, que ensaiam as
+                primeiras formas de "especulação", usando seus jardins como demonstração de imponência para atração de
+                investimentos. Esses equipamentos de lazer com suas alamedas para passeio à cavalo eram usufruidos
+                apenas
+                pelos chefes do governo holandês. Não havia no Recife da época outro jardim projetado por brancos. Ainda
+                para gozo dos governadores, havia um palácio chiquérrimo na beira do Capibaribe com uma <i>
+                    Boa
+                    Vista
+                </i> para o continente (daí o nome do bairro). A tal "primeira cervejaria" sempre mencionada é outro
+                equipamento para as classes dominantes. Tadinhos dos colonizadores, eles
+                precisavam de descanso e lazer para manter sua saúde mental e assim poder explorar os nativos e os
+                africanos
+                😭
+            </p>
+
+            <p class="text">
+                Além dos senhores e escravizados havia também uma expressiva terceira camada da sociedade composta por
+                fazendeiros, pelos capangas dos senhores de engenho, pelos trabalhadores livres e pelas pessoas que
+                viviam
+                do comércio. Alguns desses possuiam seus próprios escravos mas não possuíam fazenda própria. Nem todos
+                eram brancos, inclusive, nesse recorte. Muitas famílias racializadas livres
+                desempenharam o trabalho de cultivo de plantações para consumo local, da pesca, da pecuária, da
+                confecção de roupas e
+                também da diversão dos senhores e demais habitantes. Essas famílias habitavam as vilas dentro dos
+                engenhos
+                ou já habitavam casarios na cidade, um outro tipo de <mark class="red">alojamento</mark> de
+                trabalhadores da cidade-fábrica.
+                Essas vilas dariam origem a alguns dos bairros da cidade, geralmente ao redor das igrejas das fazendas,
+                como
+                a de Nossa Senhora dos <b>Aflitos</b>.
+            </p>
+
+            <img class="illustration" src="../images/15/09_uruae1.jpg" />
+            <p class="subtitle">Imagem do Engenho Uruaé em Condado, Pernambuco hoje. Em destaque a antiga senzala
+                da fazenda e sua planta baixa [7].
+            </p>
+
+            <p class="text">
+                Igualmente, toda fazenda possuia uma estrutura intencionalmente precária para o alojamento dos
+                escravizados.
+                As senzalas estavam mais para um amontoado de negros. Muito apertadas e administradas pelos capangas dos
+                senhores, eram geralmente um enfileiramento de quartinhos (muito parecidas com as
+                penitenciárias atuais) que dava para um pátio central. Sua localização na fazenda era estratégica para o
+                fácil deslocamento ao serviço, havendo
+                relatos de varandas de casa-grande que davam vista para a senzala, mas deslocada o suficiente para criar
+                certa separação física das vivências negras e brancas [8]. Comumente as senzalas davam também para um
+                vão de utilização comum dos escravizados, um terreiro. Relatos holandeses descrevem essas áreas como
+                sendo utilizadas para
+                o plantio próprio dessas famílias (que dividiam as horas do dia entre a servidão e a subsistência) e
+                para práticas religiosas discretas, assim como para os funerais das muitas vítimas dessa exploração.
+            </p>
+
+            <p class="text">
+                Uma outra estrutura própria para a triagem dos indivíduos escravizados recém-desembarcados foi o
+                Hospital dos Lázaros, construído no século 18 [4]. As leis por todo o Brasil que regulamentavam que os
+                escravizados
+                precisavam ficar em quarentena nesse espaço por oferecer "risco de contaminação" ao resto da população
+                escravizada (e portanto prejuízo para a cidade-fábrica), desenham as nossas primeiras leis sanitárias
+                [10].
+                <mark class="purple">Recursos</mark> ironicamente <mark class="purple">humanos</mark>.
+            </p>
+
+            <blockquote>Inclusive, no momento de escrita desse texto, a atual Santa Casa de Misericórdia, que administra
+                o "Hospital dos Lázaros", falha em não expor sua história em seu relato institucional disponível em <a
+                    href="https://www.santacasarecife.org.br/institucional/nossa-historia/">seu site</a>. Sequer cita a
+                relação do hospital com escravizados. Não é que a história precisa ser omitida por ser violenta, mas é
+                fundamental que ela seja respeitosamente relatada para que o Recife reforce sua consciência sobre si e
+                sobre o tema.</blockquote>
+
+            <p class="text">
+                Um comentário adicional sobre a vida dos escravizados é a atuação dos capangas dos senhores. Chamados
+                também
+                durante a história de "capitães do mato", esses homens eram em sua grande maioria homens racializados
+                livres. Dividiam moradia com os fazendeiros nas vilas dos engenhos, e serviam como uma proto-polícia
+                para a
+                manutenção da produção e riqueza dos senhores.
+            </p>
+
+            <p class="text">
+                Em adição, havia o local de trabalho da grande maioria de escravizados, o engenho, as roças e as margens
+                dos
+                rios de onde se pescava: as <mark class="green">fábricas</mark>. As condições de trabalho nesse lugares,
+                principalmente no cultivo
+                da cana, na moenda e na caldeira do engenho acarretavam em mutilações, queimaduras, entoxicação e
+                frequentemente em mortes. Absolutamente nada faria a "roda" dessa "economia" parar, se não a
+                violência...
+            </p>
+
+            <img class="illustration" src="../images/15/10_uruae2.jpg" />
+            <p class="subtitle">Lembra do Engenho Uruaé (em destaque)? Na imagem anterior é possível observar uma
+                estrada que parte do pátio central para baixo. Ela se liga ao imenso espaço de plantio da fazenda,
+                colocada em perspectiva na imagem acima.
+            </p>
+
+            <p class="text">
+                Por último, as fábricas eram ligadas aos serviços da cidade, ao porto e aos prédios da administração
+                pelos
+                <mark class="yellow">caminhos</mark> do Recife. As estradas e os rios eram, curiosamente, os espaços
+                mais <i>democráticos</i> daquela
+                época dentro de suas circunstâncias. Por esses caminhos se cruzavam os escravizados de diferentes
+                engenhos.
+                Se cruzavam escravizados com fazendeiros de diferentes engenhos. Se cruzavam fazendeiros. Se cruzavam
+                padres, fazendeiros e senhores. Se cruzavam escravizados e os demais. Mas não se iludam por essa
+                democracia:
+                a divisão social nesses espaços se dava pela forma de movimento. Enquanto uns carregavam, outros eram
+                carregados. Enquanto uns iam à pé, outros cavalgavam. Enquanto uns remavam, outros apenas apreciavam o
+                passeio de barco.
+            </p>
+
+            <img class="illustration" src="../images/15/11_metro1.png" />
+            <p class="subtitle">Esquema da cidade-fábrica colonial. Representados em vermelho/listrado os engenhos mais
+                próximos do porto e em amarelo alguns dos caminhos ligando os setores dessa empresa.
+            </p>
+
+            <p class="text">
+                Para escapar dessa exploração, os escravizados juntavam-se em comunidades isoladas da cidade-fábrica, os
+                <b>quilombos</b>. A fuga desses indivíduos era duramente reprimida, ela significava o prejuízo dos
+                senhores! Quando os holandeses chegaram em Recife, eles se aliaram aos portugueses na guerra contra
+                essas comunidades. Os quilombos representavam o fim da empresa colonial. Eram sociedades
+                comunitárias, cuja organização não visava o lucro de uma metrópole, nem a manutenção de um reino
+                intercontinental: era a vida de subsistência com os insumos que a terra ao redor dava, organizada para
+                sua
+                defesa, inclusive apropriando-se da violência. Além do prejuízo econômico dos colonizadores, os
+                quilombos representavam também
+                uma nova forma de organização social que os brancos tentavam evitar ao máximo que ela fosse conhecida
+                pelos demais escravizados, mantendo-os distantes não apenas fisicamente, mas ideologicamente também.
+                Essa organização social é até hoje o terror
+                do senso comum liberal, pois nesse sentido nada mudou: o quilombola ou qualquer indivíduo que se
+                organize contra sua
+                exploração é comumente acusado de "vagabundo", visto como delinquente, rechaçado como estranho aos
+                "costumes".
+            </p>
+
+            <p class="text">
+                Agora se liguem na função que cada local da cidade-fábrica representa. Nunca foi o jardim para o
+                descanso do
+                negro, mas o espaço improvisado atrás da senzala. Nunca foi o caldeirão extremamente quente do
+                engenho para o branco trabalhar, mas a burocracia no palácio servido pelas maiores mordomias na empresa.
+                Inclusive, "empresa" é um termo muito utilizado pela historiografia para registrar a intenção dos
+                colonizadores. E o paralelo com a atualidade é inevitável: de lá para cá, será que o preto recifense
+                ganhou
+                um jardim para seu descanso? Será que os palácios fortificados para a proteção dos brancos foram
+                desfeitos?
+                Será que as formas de policiamento e a perseguição de alvos foram encerradas? Será que os caminhos do
+                Recife
+                foram verdadeiramente democratizados?
+            </p>
+
+            <p class="section-divider">🏭🏭🏭</p>
+
+            <h3>A Revolução Industrial Pernambucana</h3>
+
+            <p class="text">
+                Pelo fim do século 19 uma nova "invasão" inglesa ocorreu em Pernambuco, agora bem recebida pelos
+                senhores e
+                seus governos. Era a introdução da industrialização no Recife, protagonizada pelos primeiros homens de
+                negócio, os ingleses e suas becas caricatas 🎩 A verdade é que nessa época os engenhos de açúcar
+                pernambucanos estavam <b>falidos</b>, e essa economia já mostrava sinais de queda desde a saída dos
+                holandeses 200
+                anos antes... Com a descentralização da produção de açúcar para o Caribe, Pernambuco passou a viver à
+                sombra
+                dessa rota comercial e pegou #200 nos charts da confeitaria. Esses novos "investimentos" ingleses
+                representavam um novo suspiro aos senhores pernambucanos e terminaram reorganizando os setores da
+                cidade-fábrica. Entretanto, essa sobrevida aos poderes dos senhores significou novas formas de
+                exploração do povo racializado e culminou na reprodução da nova divisão de classes industriais entre uma
+                burguesia local e "proletariado escravizado", para a surpresa de Marx.
+            </p>
+
+            <p class="text">
+                Famílias ricas da Inglaterra desembarcaram em Pernambuco atuando como intermediárias entre o Brasil
+                império
+                e a coroa britânica. Elas procuraram locais agradáveis para estabelecer moradia, locais mais quietos,
+                mais
+                frescos e arborizados do que o centro barulhento e desorganizado do Recife [11]. Assim levantaram seus
+                casarões ao longo das margens do Capibaribe: Graças, Madalena, Jaqueira, Casa Forte, Poço, Apipucos,
+                Arruda,
+                Beberibe, Caxangá, Dois Irmãos e Várzea (alô <i>Brennands</i>). Nem todos os imigrantes eram ingleses,
+                mas os que não eram tinham
+                uma relação dependente dos negócios ingleses. Assim era a família <i>Freire</i> (que mudou a grafia pra
+                <i>Freyre</i> pra
+                parecer mais europeia), de onde nasceu <b>Gilberto Freyre</b>, morador de Apipucos e "anglofílico" [12].
+                A
+                <mark class="blue">diretoria</mark> da cidade-fábrica, o poder político, se deslocou aos poucos das
+                casas-grandes e dos palácios do governo para as
+                imponentes mansões do Capibaribe. À moda inglesa, essas residências não possuiam senzalas. A Inglaterra
+                baniu o tráfico de escravizados na metade do século 19 e as leis brasileiras se adequaram para não
+                perder
+                seus laços de negócio: mas "só para inglês ver". A realidade foi que o tráfico atingiu seu pico nesse
+                mesmo
+                século e se sabe de navios negreiros que cruzaram ilegalmente o Atlântico até quase o século 20!
+            </p>
+
+            <img class="illustration clickable" src="../images/15/12_freyre.gif"
+                out-href="https://youtu.be/Gc_ATR9QpZw" />
+            <p class="subtitle">Manuel servindo a mesa para Gilberto e sua esposa. Segundo Freyre, "Manuel está há
+                muitos anos com a família".
+            </p>
+
+            <p class="text">
+                As <mark class="pink">áreas de lazer</mark> providenciadas pelos jardins dos senhores no centro se
+                transferiram para as áreas mais
+                frescas da Várzea (os bosques de Brennand), para a zona norte mais imediata (os campos da Jaqueira, o
+                lago
+                de Apipucos, o orto de Dois Irmãos) e para as praias da zona sul (Pina e Boa Viagem). Nascem também os
+                clubes de esporte fundados pelos senhores ingleses e seus admiradores que utilizaram os rios para a
+                prática
+                do remo e as várzeas para o futebol e outros esportes. Outros costumes da ociosidade inglesa também se
+                transferiram para o Recife, como o "<i>Country Club</i>", o "<i>golf club</i>" e os jóqueis para a
+                prática do hipismo. A
+                vida da diretoria inglesa contava também com hospital próprio, igreja anglicana própria e até um
+                cemitério
+                próprio. Todos ainda em funcionamento hoje, mantendo o caráter de espaços "exclusivos" para essa
+                camada da população.
+            </p>
+
+            <img class="illustration clickable" src="../images/15/13_diario.png"
+                out-href="http://memoria.bn.br/DocReader/029033_04/13" />
+            <p class="subtitle">Dividiam uma página do Diário de Pernambuco de 1860 um anúncio de corridas no <i>Jockey
+                    Club</i> do Bongi e da fuga de dois escravizados, um homem em Goiana e uma mulher do bairro do
+                Monteiro em Recife.
+            </p>
+
+            <p class="text">
+                Os empreendimentos ingleses de industrialização do açúcar e do algodão em Pernambuco criaram novos pólos
+                industriais mais afastados do porto, como em Paudalho e Carpina. Em Recife, novas <mark
+                    class="green">fábricas</mark> tratavam o
+                açúcar e algodão que chegava do interior. Caxangá, Madalena, Torre, Várzea, Beberibe e Afogados são
+                exemplos
+                desses novos espaços fabris. Olinda e Jaboatão também assistiram seus entornos se industrializarem.
+            </p>
+
+            <p class="text">
+                Os engenhos foram aos poucos perdendo espaço para as crescentes vilas, que transformaram-se em
+                <mark class="red">alojamentos</mark> de operários. Os bairros que possuiam indústrias, e os outros
+                bairros ao redor, cresceram na
+                transição do século 19 para o 20. Exemplos são o Cordeiro, Iputinga, Bongi, Campo Grande, Encruzilhada,
+                Tejipió e Imbiribeira, sempre em torno de uma igreja, onde já se estabeleciam as vilas das fazendas.
+                Iniciou-se também o êxodo de famílias do interior para a capital em busca das oportunidades nas fábricas
+                e
+                dos serviços auxiliares que sustentavam esses negócios.
+                Parte desses serviços eram os trabalhos domésticos que passou a substituir o trabalho de escravidão das
+                decadentes casas-grandes.
+            </p>
+
+            <img class="illustration" src="../images/15/11_metro2.png" />
+            <p class="subtitle">Esquema da cidade-fábrica no fim do século 19. Ocupando a Várzea, as margens norte do
+                Capibaribe e sul do Beberibe, os novos senhores da cidade expandiram também os alojamentos de
+                trabalhadores que foram ocupando os espaços à procura de serviços.
+            </p>
+
+            <p class="text">
+                E para onde foram as senzalas? Durante o século 19, a cidade do Recife que funcionava como um porto, a
+                última ponta da produção pernambucana, passou a concentrar mais fortemente a diretoria, os alojamentos e
+                os
+                escritórios de serviço. Não que não houvesse mais ninguém na condição de escravidão, pelo contrário, as
+                estimativas
+                demográficas indicam que em 1850 <b>10,9%</b> da população era de pessoas escravizadas em Recife.
+                Enquanto
+                isso, as estimativas da zona da mata pernambucana apontam que <b>62,6%</b> da população era escravizada
+                no
+                mesmo ano [13]. A busca por melhores condições de vida na capital que se intensificaria durante a virada
+                para o século 20 criaria uma nova categoria de <mark class="red">alojamento</mark> para os trabalhadores
+                (e ex-escravizados) da
+                cidade-fábrica. As comunidades se organizavam ao redor das áreas de serviço da cidade em estruturas
+                conhecidas por <b>mocambos</b>. Durante o século 20, o poder público se mobilizou diversas vezes em
+                "ofensivas
+                contra os mocambos" com políticas públicas racistas que procuravam afastar essas famílias para fora dos
+                centros. Além dos mocambos levantados nos vazios e no entorno do centro do Recife, outros bairros
+                surgiram como
+                amontoados de mocambos, como o de <b>Santo Amaro</b>, mas essa ocupação não se limitava a uma região
+                específica da cidade.
+                Todo bairro que dispunha de serviços e, portanto, oferecia grande circulação de dinheiro, possuia
+                mocambos.
+            </p>
+
+            <img class="illustration" src="../images/15/14_etnia.png" />
+            <p class="subtitle">
+            </p>
+
+            <p class="text">
+                O período de tentativas pernambucanas de se separar do Brasil, motivadas pelo abuso da configuração
+                "imperial", nunca visou a liberdade negra. Pelo contrário, nesse período se intensificaram os métodos de
+                <mark class="purple">recursos humanos</mark> para a disciplina, castigo e despejo dos detratores e
+                "inválidos" do sistema de
+                exploração da cidade-fábrica. Nascem os manicômios, hospitais de "leprosos", sanatórios, prisões,
+                reformatórios, orfanatos e a força burguesa que traduz a violência utilizada para a defesa dos
+                interesses
+                dos senhores: a polícia.
+            </p>
+
+            <p class="text">
+                Os ingleses passaram a influenciar o poder público. Uma das mudanças mais drásticas da vida urbana foi a
+                substituição das estradas e da navegação pelo transporte ferroviário. Os <mark
+                    class="yellow">caminhos</mark> da cidade-fábrica,
+                agora explorados também como negócios dos ingleses. Na Europa, o advento da ferrovia servia para ligar a
+                produção industrial e seus pólos consumidores, ligava as indústrias e seus trabalhadores, ligava a
+                produção
+                industrial a seus portos e aduanas. Já fora da Europa, as ferrovias inglesas ligavam apenas as fábricas
+                aos portos.
+                Os trabalhadores que dessem um jeito de se deslocar. Assim, reinventou-se o escoamento da produção do
+                interior para
+                o porto do Recife. A linha de ferro de <b>Limoeiro</b> levava algodão para o porto de Recife, a do
+                <b>Cabo</b> levava
+                açúcar. As poucas linhas de passageiro transportavam as famílias inglesas de suas residências ao centro
+                comercial. Assim nasceram as linhas da Várzea e de Beberibe, por exemplo. Ao longo dos caminhos férreos,
+                novas povoações nasceram e foram crescendo. Foi assim que o caminho de Recife até Jaboatão foi se
+                urbanizando também.
+            </p>
+
+            <p class="text">
+                Toda a dinâmica de linha de produção, de exploração de uma camada específica da população e de
+                manutenção
+                dessas pessoas na condição que estavam continuava. Produção sob condições escravistas para exportação, e
+                toda as estruturas que sustentavam esse esquema, muitas vezes explicitamente racistas, também se
+                mantinham.
+                Pela metade do século 20, outra ocupação do Recife traria uma nova reinvenção para o modelo de
+                cidade-fábrica. Com a segunda guerra mundial, as relações políticas globais fariam eclodir uma nova
+                potência
+                hegemônica que alterou diretamente como o Recife se organizava.
+            </p>
+
+            <p class="section-divider">🚀🚀🚀</p>
+
+            <h3><i>The American Way of Recife</i></h3>
+
+            <p class="text">
+                A concessão do litoral aos Estados Unidos como "trampolim da vitória", jargão de propaganda de guerra
+                para a
+                justificativa da ocupação americana do território brasileiro [14], traria outras mudanças radicais em
+                como a
+                cidade-fábrica se desenhou. Das estruturas instaladas no Recife pelo exército dos Estados Unidos
+                encontravam-se a base aérea, um hospital de campo, um campo de treinamento militar no próprio Recife
+                Antigo,
+                uma base burocrática na Avenida Guararapes, entre outros equipamentos, além de massiva propaganda sobre
+                a
+                guerra, que mudaram o comportamento da cidade em "tempos de exceção" [15].
+            </p>
+
+            <img class="illustration" src="../images/15/15_2_texaco.png" />
+            <p class="subtitle">
+                Anúncio da Texaco, indústria americana de combustível, no Jornal do Commercio buscando monetizar sobre
+                os esforços de guerra.
+            </p>
+
+            <div class="align-right">
+                <img class="illustration" src="../images/15/15_recrutamentoepropaganda.jpg" />
+                <p class="subtitle">
+                    Pôster de concientização do Serviço de Recrutamento e Propaganda do Recife em caso de ataque contra
+                    a cidade, já que era uma importante base americana.
+                </p>
+            </div>
+
+            <p class="text">
+                Um outro fator importante que impulsionaria a mudança estrutural da cidade: já anos antes da ocupação
+                americana, o Recife havia recebido seu primeiro <b>automóvel</b>. Uma grande reforma no bairro do Recife
+                na década
+                de 1910 demoliu o bairro original visando reproduzir as reformas urbanas de Londres e Paris do final do
+                século 19. O
+                que havia se iniciado com as reformas do bairro do Recife veio a se intensificar depois da segunda
+                guerra.
+                Pernambuco (e o Brasil) tornou-se mercado da indústria automobilística americana e seu "sonho".
+                Iniciava-se a
+                popularização do carro, no lugar do bonde e do trem, e da busca por uma maior individualidade e
+                consumismo.
+                O resultado? Um novo fracasso econômico à Pernambuco (que perdura até hoje) que foi usado como
+                justificativa
+                para a manutenção da exploração das pessoas racializadas. A nova configuração global obrigou o Recife a
+                tornar-se um pólo de consumo. As antigas áreas de produção foram se transformando e novas <mark
+                    class="green">fábricas</mark> para o
+                consumo foram aparecendo mais distantes do centro. Assim apareceram os empreendimentos às margens das
+                BR-101 e BR-232,
+                por exemplo. Sempre com o auxílio do poder público. Como de costume, as indústrias de consumo apenas
+                reproduziram o que se inventava fora com a mão de obra mais barata dos "países em desenvolvimento", e
+                muitas vezes com matéria-prima brasileira. A Coca-Cola, a Texaco, a General Motors e a General Electric
+                são exemplos.
+            </p>
+
+            <img class="illustration" src="../images/15/16_propaganda.png" />
+            <p class="subtitle">
+                Anúncios da Coca-Cola em atividades da cidade no Diário de Pernambuco na década de 40.
+            </p>
+
+            <p class="text">
+                A <mark class="blue">diretoria</mark> ganhava uma nova casa também. Os palácios do centro e os casarões
+                às margens do Capibaribe
+                não pareciam tão <i>fancy anymore™</i>. Torres altíssimas passaram a abrigar uma grande comunidade que
+                se
+                identificava com o padrão de consumo que as novas indústrias vomitavam dos Estados Unidos. <i>Shoppings
+                    Centers</i> aos poucos se transformam nas novas <mark class="pink">áreas de lazer</mark> das classes
+                de poder político. Essa nova classe dominante não precisava mais da presença física de seus
+                colonizadores: os próprios senhores brasileiros passaram a agir como eles, consumir como eles, falar
+                como eles, pensar como eles e defender a moral e costume da tradição liberal americana, apesar de uma
+                real ocupação militar americana ter acontecido durante a segunda guerra. Ao mesmo tempo, com a explosão
+                de mais "oportunidades" nos centros urbanos, mais famílias de trabalhadores continuaram o movimento de
+                êxodo rural, com as mesmas ou piores condições de trabalho.
+            </p>
+
+            <img class="illustration" src="../images/15/17_diarioeua.jpg" />
+            <p class="subtitle">
+                Os jornais pernambucanos não mediam esforços para vender uma imagem de superioridade às coisas
+                americanas. O Diário de Pernambuco, por exemplo, foi veículo de notas como essa.
+            </p>
+
+            <p class="text">A ocupação americana em Pernambuco talvez seja subestimada frente ao real impacto que ela
+                causou à organização da cidade e à vida dos recifenses. A construção da base aérea do <i>Ibura Field</i>
+                viria após a desocupação tornar-se o aeroporto internacional da cidade, mais uma <mark
+                    class="orange">alfândega</mark> que em Recife ajudou no enfraquecimento do movimento ferroviário.
+                Também, o governador-interventor Agamenon Magalhães cedeu o hospital Otávio de Freitas para o exército
+                americano, que o renomeou durante a ocupação para <i>Atlanta Recreational Center</i> e o transformou em
+                hotel de veraneio dos soldados.</p>
+
+            <img class="illustration clickable" src="../images/15/20_planofrecife.jpg" />
+            <p class="subtitle">
+                "Plano do Recife e Vizinhança". Mapa da ocupação americana no Recife, em sua maior parte na zona sul.
+            </p>
+
+            <div class="align-right">
+                <img class="illustration" src="../images/15/16_2_army.png" />
+                <p class="subtitle">
+                    Propaganda americana no Diário de Pernambuco mostrando o benevolente exército produzindo brinquedos
+                    para "órfãos brasileiros".
+                </p>
+            </div>
+
+            <p class="text">A presença americana no Recife dentro dessa nova configuração global influenciou fortemente
+                não apenas o estilo de vida dos indivíduos, mas o poder político e sua ideologia. Junto do despejo da
+                produção industrial americana, vieram também os programas para enfraquecer as organizações sociais e
+                sindicais, para manter distante a "ameaça comunista". O programa <b>Aliança para o Progresso</b> que,
+                ironicamente, apoiou os programas de moradia popular do Recife da segunda metade do século 20 e o
+                programa educacional de Paulo Freire, visava criar "ilhas de sanidade" em locais específicos da América
+                Latina. Comparado ao "Plano Marshall" na Europa, alega-se que os investimentos americanos no velho
+                continente reconstruíram e fortaleceram uma Europa destroçada pela guerra, enquanto na América Latina
+                não, porque os povos latinos ainda não conheciam nem seus próprios problemas [16]. Entretanto, o
+                financiamento massivo de uma políticas liberais dentro de um território extremamente desigual como o
+                Brasil não resultaria em nada mais além de mais exploração e reinvenção dos mecanismos de opressão.</p>
+
+            <img class="illustration clickable" src="../images/15/19_mocambos.png" />
+            <p class="subtitle">
+                Mocambos em Santo Amaro. Ao mesmo tempo que se celebrava a "bolha de sanidade" americana na zona sul da
+                cidade, essa era a realidade do povo recifense. Os mocambos se transformaram em problema policial e
+                político que mobilizou a burguesia da época para sua "erradicação" com participação dos Estados Unidos
+                [16].
+            </p>
+
+            <p class="text">
+                O carro significou também um modo prático de se deslocar pelos <mark class="yellow">caminhos</mark> da
+                cidade-fábrica que não eram
+                cobertos por trilhos. Em planejamento, isso significou o início da ocupação de áreas ainda isoladas.
+                Nasceram assim novos bairros, <mark class="red">alojamentos</mark> da classe trabalhadora, derivados de
+                grandes lotes da propriedade dos antigos senhores e pelos lotes financiados pela União como o Engenho do
+                Meio, Peixinhos e Areias. Nasceu
+                também a atualização dos mocambos: as <b>favelas</b>, para aqueles que não podiam comprar suas moradias.
+            </p>
+
+            <div class="align-right">
+                <img class="illustration" src="../images/15/19_2_coque.png" />
+                <p class="subtitle">
+                    Fotografia de André Gerard da comunidade do Coque em 1970. O Coque localiza-se entre a zona sul e o
+                    centro da cidade.
+                </p>
+            </div>
+
+            <p class="text">
+                Da mesma forma que os mocambos, as favelas ocuparam os locais próximos aos serviços em busca de
+                oportunidades de
+                trabalho, reinvindicando a posse de áreas ainda não utilizadas em todas as partes da cidade, do centro
+                até
+                as áreas mais limítrofes como a Guabiraba, incluindo os morros e os alagados. O carro facilitou a
+                ligação desses
+                espaços
+                com as demais partes da cidade-fábrica, bem como facilitou a intervenção dos <mark
+                    class="purple">recursos humanos</mark> dos
+                poderes políticos contra essa camada da população.
+            </p>
+
+            <p class="text">
+                E assim como as antigas <b>aldeias</b>, os <b>pelourinhos</b>, os <b>lazaretos</b> e outras instituições
+                para a "correção" de
+                indivíduos, novas formas de aprisionamento e punição passaram a vigiar os trabalhadores do Recife.
+                Ainda hoje, quem decide quem serve e não serve para a vida em sociedade é a polícia e as formas de
+                policiamento dos corpos da ideologia dominante. O descarte dos indesejáveis se dá hoje nas delegacias,
+                instituições de reeducação,
+                clínicas de reabilitação, prisões, penitenciárias ou com a execução direta da classe trabalhadora, negra
+                em sua
+                massiva maioria.
+            </p>
+
+            <img class="illustration clickable" src="../images/15/18_shoppingrecife.gif"
+                out-href="https://youtu.be/5rkaLAqr_rU" />
+            <p class="subtitle">
+                A propaganda de TV do "Shopping Center Recife Boa Viagem" explorava o modelo do sonho americano de
+                consumo e apela para a reprodução do que se via no cinema da época. De lá para cá a ideologia americana
+                não apenas permaneceu como tornou-se tão sedimentada que questioná-la é um comportamento desviante.
+            </p>
+
+            <p class="text">
+                Setores de épocas diferentes da cidade-fábrica continuam a existir, convivendo entre si, mas lideradas e
+                organizadas pelo poder da vez. Ainda possuimos uma <mark class="blue">diretoria</mark>, <mark
+                    class="pink">áreas de lazer</mark> da classe dominante, <mark class="orange">alfândega</mark>, <mark
+                    class="purple">recursos humanos</mark>, <mark class="green">fábricas</mark>, <mark
+                    class="red">alojamentos</mark> e <mark class="yellow">caminhos</mark>, vias de comunicação, entre as
+                estruturas
+                dessa linha de produção.
+            </p>
+
+            <img class="illustration" src="../images/15/23_metro3.png" />
+            <p class="subtitle">
+                O plano da cidade-fábrica organizado pelas RPAs do Recife hoje.
+            </p>
+
+            <p class="section-divider">●●●</p>
+
+            <h2>A Cidade-Fábrica Hoje</h2>
+
+            <p class="text">
+                Desde a segunda metade do século 20, a <mark class="blue">diretoria</mark> da cidade do Recife
+                deslocou-se para a zona sul. Não é que os antigos centros do poder desapareceram, Casa Forte e Apipucos
+                continuam atuantes, por exemplo. Mas Boa Viagem e o Pina, locais onde concentrou-se o capital americano,
+                abrigam hoje grande parte do poder político e econômico da cidade. É lá onde ficam os escritórios das
+                grandes construtoras que controlam as políticas de moradia da cidade.
+            </p>
+        </div>
+
+        <!-- Image -->
+        <img class="full-illustration" src="../images/15/21_riomar.jpg" />
+        <p class="subtitle">A construção do Riomar estressa a relação dos carros-versus-pessoas. De um lado, extensos
+            estacionamentos e torres de negócios. Do outro, comunidades palafitas que por vezes precisam submeter seus
+            corpos a atravessar rodovias movimentadas para acessar o transporte público.</p>
+
+        <div id="main-div">
+            <p class="text">Essa atividade predatória não é "inovação" recifense, nem mesmo brasileira. É um movimento
+                natural da ideologia capitalista americana de acúmulo de poder na mão de poucos, minando propositalmente
+                as capacidades de organização dos indivíduos. Acontece que os centros urbanos dos Estados Unidos
+                colecionam o que há de pior no planejamento de cidades, estressando ao máximo toda forma de
+                individualismo, jogando a responsabilidade de deslocamento, segurança dos corpos e outros direitos
+                básicos nas costas das pessoas comuns. A concentração da decisão sobre moradia nas construtoras
+                vulnerabiliza ainda mais as camadas mais pobres da população. A cidade para os carros, a cidade dos
+                muros altos eletrificados, a cidade do <i>Uber</i>, enfim a cidade do capital funciona em cima de um
+                <i>apartheid</i>.
+            </p>
+
+            <p class="text">
+                O <mark class="red">alojamento</mark> dos trabalhadores se move aos poucos para torres e condomínios
+                "mais
+                acessíveis e
+                seguros", na falta de opções melhores. Ao mesmo tempo, os trabalhadores que constroem e trabalham nessas
+                torres não gozam sequer do direito de habitá-los. Além
+                disso, todos os benefícios adquiridos da "classe média" podem se perder num estalar de dedos: o
+                "mercado" é regulado pelos interesses classes dominantes. Esse ente folclórico magnífico do panteão
+                liberal que é o "mercado" tem a capacidade de pegar sociedades inteiras e destruir suas conquistas para
+                a geração de "crises
+                necessárias". Seguindo a cartilha liberal, bairros como o Cordeiro, Iputinga, Ipsep, Derby e outras
+                cidades
+                da região metropolitana [17] passam por um sucateamento proposital que diminui a qualidade de vida dos
+                moradores para que "novos empreendimentos" apareçam como os remédios para esse problema, levantando
+                muros
+                mais altos e intensificando a desigualdade da cidade [18].
+            </p>
+
+            <!-- Image -->
+            <img class="illustration" src="../images/15/22_novorecife.png" />
+            <p class="subtitle">O hall de "Novos Recifes" que já nasceram fadados ao fracasso.</p>
+
+            <p class="text">
+                Os <mark class="purple">recursos humanos</mark> continuam a ser aplicados na forma de violência contra
+                as favelas, outra forma de <mark class="red">alojamento</mark> da classe trabalhadora. Essa violência é
+                sustentada pela <b>imprensa</b> que não discute os reais motivos, ouvindo a polícia com certa humanidade
+                e a população como seres muito distantes de qualquer humanidade [19]. A escassez recorrente de empregos
+                e o baixo acesso a
+                oportunidades torna essas populações vulneráveis a qualquer oferta de exploração, que dentro das
+                condições,
+                é consentida pela necessidade de sobrevivência [20]. Essa camada da população muitas vezes nem
+                moradia mais possui: o déficit habitacional no Recife é de mais de 70 mil famílias, com mais 10 mil
+                ameaçadas de despejo! [21, 22] Isso quando não habitam em regiões vulneráveis às chuvas [23]. Essas
+                famílias convivem com as novas torres vazias que vão tampando nosso
+                horizonte...
+            </p>
+
+            <p class="text">
+                As <mark class="green">fábricas</mark> hoje se materializam também em escritórios disfarçados de amigos
+                do trabalhador, mas que são
+                verdadeiros moinhos de mentes e de auto-estima [24, 25]. Se a geração dos nossos pais conviveu com uma
+                realidade onde um trabalhador poderia ser descartado ao ficar velho, hoje estamos suscetíveis ao
+                descarte sem aviso prévio em poucas semanas. O PortoDigital, maior aposta do poder municipal na área de
+                inovação das últimas décadas, não consegue manter suas empresas locais: ou procuram sair do Recife, ou
+                vão a falência [26]. Destino semelhante se apresenta aos trabalhadores que podem sair da cidade.
+            </p>
+
+            <p class="text">
+                Essa realidade atual também se caracteriza pelo enfraquecimento do poder de produção da nossa sociedade,
+                adaptada ao consumo apenas. As nossas <mark class="orange">alfândegas</mark> agora recebem produtos já
+                prontos para uso, em
+                velocidade recorde. Enquanto é inegável que a logística foi amplamente melhorada, diante da tecnologia
+                dominada hoje, ela só foi melhorada mesmo para as classes dominantes. Enquanto produtos chegam em uma
+                semana
+                do outro lado do planeta rastreados por satélites e ainda são entregues na porta dos condomínios, faltam
+                medicamentos e
+                alimento na mesa dos trabalhadores. Inclusive, medicamentos e alimentos que poderiam ser produzidos e
+                cultivados
+                em nosso próprio solo.
+            </p>
+
+            <p class="text">
+                Os <mark class="yellow">caminhos</mark> do Recife, responsáveis por ligar as partes da cidade-fábrica,
+                pune tanto os trabalhadores
+                que não podem possuir um carro quanto os que dirigem. Assistimos nos semáforos lado a lado ônibus
+                lotados com 100 pessoas e carros carregando apenas o motorista [27]. Assistimos 20 carros criarem
+                engarrafamento e poucas vias exclusivas para o transporte coletivo. Do tempo dos bondes e trens, nem os
+                trilhos estão sobrevivendo [28].
+            </p>
+
+            <p class="text">
+                As bicicletas, grandes ferramentas na quebra da lógica centrada nos carros, são instrumentalizadas
+                contra o
+                trabalhador em marketing do poder público e das construtoras. Ciclovias desconexas são construídas
+                apenas
+                para os <i>likes</i> das redes sociais da prefeitura [29], isso quando elas não são removidas por
+                "invadir o
+                espaço do carro" [30]. O poder público de uma cidade, que vive constantemente o luto pelos corpos
+                atropelados, ainda estimula a exploração de trabalhadores que dependem exclusivamente das bicicletas
+                [31].
+                Todo e qualquer problema que puder ser explorado por aplicativos e falsas tentativas de inovação será
+                apoiado e estimulado pela prefeitura e seus braços políticos. Como dito, eles parecem, cheiram, falam
+                como
+                <i>americanos</i>, seguindo a moda do vale do silício que se aproveita de regulações trabalhistas não
+                existentes
+                para a perpetuação da ideologia liberal que direciona o lucro sobre os corpos para os poucos do topo da
+                pirâmide.
+            </p>
+
+            <p class="text">
+                A gestão PSB, há mais de uma década no poder estadual e municipal, serve como bastião de proteção dos
+                interesses dessa classe que age, fala, se move e se parece com o colonizador. Isso quando as próprias
+                famílias
+                dinásticas dessa classe não sobem ao poder, como a família Campos. A atual gestão continua a reproduzir
+                o
+                modelo de cidade-fábrica que mantém o Recife como uma sociedade de <i>apartheid</i> que direciona a
+                população
+                explorada para apenas trabalhar ou ser punida. O Recife possui inúmeros aglomerados de bairros que não
+                possuem equipamento de lazer e de prática de esportes (modalidades esportivas completas e não apenas a
+                ginástica da terceira idade). O Recife possui enormes áreas que não sabem o que é ter acesso a um espaço
+                de
+                estudo e contemplação. A maior parte da cidade não possui espaços para manifestações culturais, shows e
+                reunião popular. Tudo o que há são equipamentos básicos para manutenção de sobrevivência de uma
+                população
+                feita miserável que só parece existir para servir.
+            </p>
+
+            <div class="align-right">
+                <img class="illustration" src="../images/15/24_mapaareasverdes.png" />
+                <p class="subtitle">
+                    Mapa de áreas de parques e praças da cidade do site da prefeitura. Um exemplo que ilustra o problema
+                    com esses equipamentos no Recife (quando existem): o parque de exposição do Cordeiro está marcado
+                    como parque no mapa, mas as pessoas desse bairro não o utilizam como tal.
+                </p>
+            </div>
+
+            <p class="text">
+                Os parques, as bibliotecas, os teatros e anfiteatros se concentram próximas às classes que detém o
+                poder. Já
+                as delegacias, penitenciárias, as áreas de atuação da polícia, os "terminais integrados" e seus
+                amontoados
+                de gente e outros equipamentos para controle populacional se concentram próximos às classes exploradas.
+                O
+                <i>panopticon</i> e a disciplina pelo choque e pelo medo são a realidade do Recife. E ainda há gente que
+                parece querer
+                brigar pela defesa de projetos que apenas reproduzem esse <i>apartheid</i> sob o mantra do "podia ser
+                pior".
+            </p>
+
+            <p class="text">
+                Tudo o que diz respeito à organização da cidade merece uma <b>mudança radical</b>, um fim definitivo de
+                todas
+                as formas de colonização e exploração. Ou isso, ou continuaremos nos movendo do computador para a
+                televisão
+                e da televisão para o computador, de casa para o trabalho e do trabalho para casa em uma esteira fabril
+                perpétua e cruel, nos sentindo culpados quando tentamos fugir da lógica da cidade-fábrica, quando nos
+                divertimos, quando somos humanos, apenas aguardando o dia em que os recursos humanos decretarão nosso
+                descarte.
+            </p>
 
             <hr />
 
             <h3>Referências desse texto</h3>
 
+            <ol>
+                <!-- 1 -->
+                <li><a
+                        href="https://www.companhiadasletras.com.br/livro/9788535919622/formacao-do-brasil-contemporaneo">Formação
+                        do Brasil Contemporâneo</a>,
+                    de Caio Prado Jr. (1942);</li>
+
+                <!-- 2 -->
+                <li><a href="https://www.scielo.br/j/anaismp/a/vksptVpXbCwpkvdtjb4QcsH/?lang=pt">Quintais de Olinda</a>,
+                    de Juliana Coelho Loureiro (2012);</li>
+                de Caio Prado Jr. (1942);</li>
+
+                <!-- 3 -->
+                <li><a href="https://www.companhiadasletras.com.br/livro/9788563560001/o-brasil-holandes">O Brasil
+                        Holandês</a>,
+                    de Evaldo Cabral de Mello (2010);</li>
+
+                <!-- 4 -->
+                <li>"<a href="https://repositorio.ufpe.br/handle/123456789/6970">É mais uma scena da escravidão :
+                        suicídios de escravos na cidade do Recife, 1850-1888</a>",
+                    de Ezequiel Canario (2011);</li>
+
+                <!-- 5 -->
+                <li><a href="https://twitter.com/voetnoot/status/1367788110021615618">Mark Ponte</a>
+                    no Twitter;</li>
+
+                <!-- 6 -->
+                <li><a href="https://periodicos.ufpe.br/revistas/clioarqueologica/article/view/246738">Além dos mortos
+                        da Cruz do Patrão</a>,
+                    de Ana Catarina Torres (2008);</li>
+
+                <!-- 7 -->
+                <li><a href="https://repositorio.ufpe.br/handle/123456789/584">O cativeiro rural colonial</a>,
+                    de Fabíola Silva (2006);</li>
+
+                <!-- 8 -->
+                <li><a href="https://www.revistas.usp.br/anaismp/article/view/5435">Revisitando casas-grandes e
+                        senzalas</a>,
+                    de Rafael de Bivar Marquese (2006);</li>
+
+                <!-- 9 -->
+                <li><a href="https://www.revistas.usp.br/anaismp/article/view/5435">Revisitando casas-grandes e
+                        senzalas</a>,
+                    de Rafael de Bivar Marquese (2006);</li>
+
+                <!-- 10 -->
+                <li><a href="https://www.scielo.br/j/alm/a/DKDQ9959nnThHDCtKsbHLMc/?lang=pt">Os desembarques de cativos
+                        africanos e as rotinas médicas no Porto do Recife antes de 1831</a>,
+                    de Marcus de Carvalho e Aline De Biase Albuquerque (2016);</li>
+
+                <!-- 11 -->
+                <li><a href="https://editora.ufpe.br/books/catalog/download/407/418/1233?inline=1">Rotinas e rupturas do
+                        escravismo no Recife, 1822-1850</a>,
+                    de Marcus de Carvalho (2010);</li>
+
+                <!-- 12 -->
+                <li><a href="https://www.scielo.br/j/ts/a/tkc75gpBNgThzCGHPBxTZQQ/?format=pdf&lang=pt">Ingleses no
+                        Brasil</a>,
+                    de Maria Pallares-Burke (2001);</li>
+
+                <!-- 13 -->
+                <li><a href="https://biblioteca.ibge.gov.br/biblioteca-catalogo?id=225477&view=detalhes">Censo do Brasil
+                        de 1872</a> na Biblioteca do IBGE;</li>
+
+                <!-- 14 -->
+                <li><a href="https://www.amazon.com.br/1942-Brasil-guerra-quase-desconhecida-ebook/dp/B07C58XJHC">1942:
+                        O Brasil e sua guerra quase desconhecida</a>, João Barone (2018);</li>
+
+                <!-- 15 -->
+                <li><a href="https://repositorio.ufpe.br/handle/123456789/11668?locale=es">Base Fox</a>, de Manoel da
+                    Fonseca (2014);</li>
+
+                <!-- 16 -->
+                <li><a href="https://periodicos.sbu.unicamp.br/ojs/index.php/urbana/article/view/8635308">Políticas
+                        habitacionais para a baixa renda no Brasil populista e ditatorial</a>, de Caroline Gonçalves dos
+                    Santos (2014);</li>
+
+                <!-- 17 -->
+                <li><a
+                        href="http://mapadeconflitos.ensp.fiocruz.br/conflito/pe-copa-do-mundo-deixa-moradores-de-camaragibe-sem-moradia-e-sem-indenizacoes-justas/">Copa
+                        do Mundo deixa moradores de Camaragibe sem moradia e sem indenizações justas</a>, do Mapa de
+                    Conflitos da Fiocruz;</li>
+
+                <!-- 18 -->
+                <li><a href="https://www.usp.br/nutau/anais_nutau2014/trabalhos/andrade_vitoriarl.pdf">Os megaeventos e
+                        o mito da redenção urbana</a>, de Vitória Andrade, Tomás Lapa e José Brandão Neto (2012);</li>
+
+                <!-- 19 -->
+                <li>"<a
+                        href="https://www1.folha.uol.com.br/cotidiano/2022/04/comercio-reabre-em-porto-de-galinhas-apos-onda-de-violencia.shtml">Comércio
+                        reabre em Porto de Galinhas após onda de violência</a>", de João Pedro Pitombo (2022);</li>
+
+                <!-- 20 -->
+                <li>"<a
+                        href="https://g1.globo.com/pe/pernambuco/noticia/2022/02/24/pernambuco-tem-199percent-de-desemprego-e-atinge-o-maior-indice-em-todo-o-brasil-em-2021-diz-ibge.ghtml">Pernambuco
+                        tem 19,9% de desemprego e atinge o maior índice em todo o Brasil em 2021, diz IBGE</a>", no G1
+                    Pernambuco (2022);</li>
+
+                <!-- 21 -->
+                <li>"<a
+                        href="https://radiojornal.ne10.uol.com.br/noticia/2019/09/23/deficit-habitacional-no-recife-chega-a-71-mil-moradias-176663/index.html">Déficit
+                        habitacional no Recife chega a 71 mil moradias</a>", no Jornal do Commercio (2019);</li>
+
+                <!-- 22 -->
+                <li>"<a
+                        href="https://jc.ne10.uol.com.br/economia/2021/10/13616374-recife-vira-cidade-das-ocupacoes-com-aluguel-caro-pobre-sem-renda-e-falta-de-politica-habitacional.html">Recife
+                        vira cidade das ocupações, com aluguel caro, pobre sem renda e falta de política
+                        habitacional</a>", de Lucas Moraes (2021);</li>
+
+                <!-- 23 -->
+                <li>"<a
+                        href="https://jc.ne10.uol.com.br/pernambuco/2022/05/15017880-chuvas-em-pernambuco-apenas-jaboatao-cidade-devastada-pelas-chuvas-contabiliza-91-mil-pessoas-desalojadas.html">Apenas
+                        Jaboatão, cidade devastada pelas chuvas, contabiliza 91 mil pessoas desalojadas</a>", de Bruno
+                    Vinicius (2022);</li>
+
+                <!-- 24 -->
+                <li>"<a
+                        href="https://g1.globo.com/economia/concursos-e-emprego/noticia/2022/01/11/sindrome-de-burnout-e-reconhecida-como-doenca-ocupacional-veja-o-que-muda-para-o-trabalhador.ghtml">Síndrome
+                        de burnout é reconhecida como doença ocupacional</a>", de Marta Cavallini (2022);</li>
+
+                <!-- 25 -->
+                <li>"<a href="https://sites.usp.br/psicousp/home-office-compromete-saude-mental-do-trabalhador/">Home
+                        office compromete saúde mental do trabalhador</a>", de Islaine Maciel (2022);</li>
+
+                <!-- 26 -->
+                <li>"<a
+                        href="https://blogs.iadb.org/brasil/pt-br/novos-caminhos-para-startups-aceleradoras-e-hubs-de-inovacao-se-reinventam-durante-a-crise/">Novos
+                        caminhos para startups: aceleradoras e hubs de inovação se reinventam durante a crise</a>", de
+                    Vanderleia Radaelli e Felipe Matos (2020);</li>
+
+                <!-- 27 -->
+                <li>"<a
+                        href="https://jc.ne10.uol.com.br/colunas/mobilidade/2022/03/14959182-recife-mesmo-com-a-pandemia-e-a-capital-mais-congestionada-do-brasil-de-novo.html">Recife,
+                        mesmo com a pandemia, é a capital mais congestionada do Brasil. De novo</a>", de Roberta Soares
+                    (2022);</li>
+
+                <!-- 28 -->
+                <li>"<a
+                        href="http://oxerecife.com.br/2018/04/10/bonde-virou-peca-de-museu-e-trilhos-somem-das-ruas-do-recife-sem-memoria/">Bonde
+                        virou peça de museu e trilhos somem das ruas do Recife sem memória</a>", de Letícia Lins (2018);
+                </li>
+
+                <!-- 29 -->
+                <li>"<a
+                        href="https://www.mobilize.org.br/noticias/13121/mobilidade-urbana-melhora-no-recife-mas-ainda-falta-muito.html">Mobilidade
+                        urbana melhora no Recife... mas ainda falta muito</a>", de Regina Rocha parte do Mobilize Brasil
+                    (2022);</li>
+
+                <!-- 30 -->
+                <li>"<a
+                        href="https://g1.globo.com/pernambuco/noticia/2012/08/no-recife-bicicletada-protesta-contra-fechamento-de-ciclofaixa.html">No
+                        Recife, bicicletada protesta contra fechamento de ciclofaixa</a>", no G1 Pernambuco (2012);</li>
+
+                <!-- 31 -->
+                <li>"<a
+                        href="https://www.diariodepernambuco.com.br/noticia/vidaurbana/2021/02/prefeitura-doa-bicicletas-e-smartphones-para-ajudar-na-geracao-de-rend.html">Prefeitura
+                        doa bicicletas e smartphones para ajudar na geração de renda de recifenses</a>", no Diário de
+                    Pernambuco (2021);</li>
+            </ol>
+
+            <hr />
+
+            <h3>Mais Textos</h3>
+
+            <div class="button" out-href="14">
+                <img class="icon" src="../icons/nature/crab.png" />
+                <p>Identidade Nacional</p>
+            </div>
+
+            <div class="button" out-href="13">
+                <img class="icon" src="../icons/nature/crab.png" />
+                <p>Kalungas - São Tomé</p>
+            </div>
+
             <div class="button" out-href="11">
-                <img class="icon" src="/../icons/nature/crab.png" />
+                <img class="icon" src="../icons/nature/crab.png" />
                 <p>Quando a Inglaterra invadiu Pernambuco</p>
             </div>
 
-            <div class="button" out-href="08">
-                <img class="icon" src="../../icons/nature/crab.png" />
-                <p>Miscigenação</p>
+            <div class="button" out-href="10">
+                <img class="icon" src="../icons/nature/crab.png" />
+                <p>História do Bolo de Rolo</p>
             </div>
 
-            <ul>
-                <li><a href="https://www.companhiadasletras.com.br/detalhe.php?codigo=11271">O Trato dos Viventes</a>, de Luiz Felipe de Alencastro (2000);</li>
+            <hr />
 
-                <li><a href="http://www.revistanavigator.com.br/navig13/dossie/N13_dossie3.pdf">A África e os africanos nas fabulações cartográficas</a>, de Letícia Destro;</li>
-
-                <li><a href="https://www.academia.edu/33319003/O_reino_do_Kongo_e_a_sua_origem_meridion_pdf">O reino do Kôngo e a sua origem meridional</a>, de Patrício Batsîkama (2011);</li>
-
-                <li><a href="https://www.companhiadasletras.com.br/detalhe.php?codigo=85001">O Brasil Holandês</a>, de Evaldo Cabral de Mello (2010);</li>
-
-                <li><a href="https://www.amazon.com.br/Povo-Brasileiro-Forma%C3%A7%C3%A3o-Sentido-Brasil/dp/8526022253">O Povo Brasileiro: A formação e sentido do Brasil</a>, de Darcy Ribeiro (1995);</li>
-
-                <li><a href="http://www.maracatuteca.com.br/historia-e-estudos/#documentos">Maracatus do Recife</a>, de Guerra Peixe (1900);</li>
-
-                <li>História do Negro Brasileiro, de Clóvis Moura (1989).</li>
-            </ul>
+            <blockquote>
+                Texto escrito por mim, <b>Henrique Andrade</b>. Leia mais sobre o blog na seção específica.
+            </blockquote>
         </div>
 </body>
 
