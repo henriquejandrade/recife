@@ -10,7 +10,7 @@ A história começa quando eu ainda era um estudante de engenharia da computaç�
 
 Quando aprendi a implementar o código desse efeito, comecei a testar com as fotos dos meus amigos e de animais, fazendo piadinhas ou fazendo transformações deles crianças em adultos. Depois de uns anos, percebi que eu poderia usar esse efeito para me vender. Eu poderia implementar formas interessantes de utilizar esse algoritmo e chamar atenção para meu portifólio. Percebi que seria muito interessante utilizar imagens de cidades, antes e depois, destacando as mudanças urbanas.
 
-![](https://www.hnrqndrd.com/recife/morphing/guararapes1940.gif)
+![](https://www.historiadorecife.com/morphing/guararapes1940.gif)
 
 Minha próxima percepção foi a de que o efeito seria ainda mais impressionante se eu utilizasse mapas históricos. A partir do momento que iniciei a busca por mapas antigos do Recife, cidade que nasci e fui criado, entrei em um planeta tão familiar e tão desconhecido ao mesmo tempo. Eu reconhecia todas as formas, todos os nomes, todos os espaços ali. Eu, ciclista, que observo a cidade a partir do espaço do carro, o asfalto, mas na altura de um humano em pé, comecei a levantar vários questionamentos e tudo aquilo me fez muito curioso.
 
@@ -18,23 +18,23 @@ O primeiro mapa
 ---
 Ao iniciar a busca por esses documentos, a fim de usar meu efeito e confirmar minha hipótese de que realmente iria ficar legal, encontrei essa imagem:
 
-![](https://www.hnrqndrd.com/recife/maps/1639_1.jpg)
+![](https://www.historiadorecife.com/maps/1639_1.jpg)
 
 Nesse mapa, na minha leitura inicial, eu me deparei com as pontes que eu atravesso todos os dias, com ruas que eu pedalo todos os dias e com vários detalhes que posicionam na história e explicam o motivo da cidade ser o que é hoje. Esse mapa me intrigou muito. Sempre soube que a cidade fora dominada por portugueses e holandeses, e esse mapa tão detalhado não estava em português, então talvez fosse holandês. Eu não sabia que havia um documento tão detalhado em holandês. Muita coisa nele me é familiar:
 
-![A ponte… do Recife?](https://www.hnrqndrd.com/recife/images/01/01.png)
+![A ponte… do Recife?](https://www.historiadorecife.com/images/01/01.png)
 
-![Um forte de… cinco pontas?](https://www.hnrqndrd.com/recife/images/01/02.png)
+![Um forte de… cinco pontas?](https://www.historiadorecife.com/images/01/02.png)
 
-![O que parecem ser jardins logo onde hoje é o… campo das princesas?](https://www.hnrqndrd.com/recife/images/01/03.png)
+![O que parecem ser jardins logo onde hoje é o… campo das princesas?](https://www.historiadorecife.com/images/01/03.png)
 
 E também me chamaram atenção os elementos que não fazem nenhum sentido, a primeira vista, estarem ali:
 
-![Uma ilha com um forte?](https://www.hnrqndrd.com/recife/images/01/04.png)
+![Uma ilha com um forte?](https://www.historiadorecife.com/images/01/04.png)
 
-![Um forte no meio da cidade?](https://www.hnrqndrd.com/recife/images/01/05.png)
+![Um forte no meio da cidade?](https://www.historiadorecife.com/images/01/05.png)
 
-![Uma ilha no meio do Capibaribe?](https://www.hnrqndrd.com/recife/images/01/06.png)
+![Uma ilha no meio do Capibaribe?](https://www.historiadorecife.com/images/01/06.png)
 
 E tantos outros detalhes nesse mapa que me intrigaram e me incitaram a procurar mais. E procurando mais, descobri que a história recifense está até bem digitalizada. Até hoje, momento em que escrevo esse texto, eu continuo tropeçando em documentos digitalizados em alta qualidade pela internet. É estranho, mas não há tanto documento digital do Recife em fontes brasileiras. A história recifense está salva e pode ser acessada, em sua maioria, em sites americanos, portugueses, holandeses, franceses etc. Menção honrosa ao site da biblioteca nacional do Rio de Janeiro que tem acervos enormes de material digitalizado, para o bem da história.
 
@@ -80,14 +80,14 @@ Veja, querido leitor, não quero nem que você conheça a cidade para acompanhar
 ¹ Ilha do Recife
 ---
 
-![](https://www.hnrqndrd.com/recife/images/01/07.png)
+![](https://www.historiadorecife.com/images/01/07.png)
 
 É hoje um bairro, no centro do Recife, leste do município, que sempre serviu como o porto e deu nome à cidade. Originalmente não é uma ilha, mas um ístmo, ou seja, uma ponta de terra que se liga ao continente por um braço de terra, no caso de Recife, de areia.
 
 ² Ilha de Santo Antônio
 ---
 
-![](https://www.hnrqndrd.com/recife/images/01/08.png)
+![](https://www.historiadorecife.com/images/01/08.png)
 
 É, na imagem, onde se lê “Santo Antônio”. A ilha compreende quatro bairros: Santa Joana, Cabanga, São José e o bairro que tem o mesmo nome da ilha. É historicamente o centro do Recife, mas não quer dizer que ele tenha que ficar para a história.
 
