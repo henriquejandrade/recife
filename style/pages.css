@@ -6,7 +6,7 @@ body, html {
     margin: 0;
 }
 
-h1 {
+/* h1 {
     font-size: 1.5em;
     text-align: center;
     margin: 50pt 0 5pt 0;
@@ -22,17 +22,17 @@ h3 {
     font-size: 1.1em;
     text-indent: 20pt;
     margin: 25pt 0 5pt 0;
-}
+} */
 
-a:link {
-    color: #000;
+/* a:link {
+    color: #444;
     text-decoration: none;
 }
 
 a:visited {
-    color: #000;
+    color: #222;
     text-decoration: none;
-}
+} */
 
 p {
     /* text-align: justify; */
