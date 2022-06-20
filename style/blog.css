@@ -91,7 +91,7 @@ p.signature {
 }
 
 p.text {
-    text-align: justify;
+    /* text-align: justify; */
     text-indent: 25pt;
 }
 
