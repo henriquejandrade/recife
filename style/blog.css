@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Crimson Text';
+    src: url('../fonts/CrimsonText-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Patua One';
+    src: url('../fonts/PatuaOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
+
 body, html {
     color: #000000;
     background: #FFFFFF;

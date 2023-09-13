@@ -4,9 +4,6 @@ $(document).ready(function () {
     var topBarHeight = $('#top-bar').height();
     $('#icon-top-bar').width($('#top-bar').height());
     $('.nav-button').height(topBarHeight);
-    // $('.icon').each(function () {
-    //     $(this).width($(this).parent().height());
-    // });
 
     $('.button, .clickable, .nav-button').click(function (event) {
         // Navigation
