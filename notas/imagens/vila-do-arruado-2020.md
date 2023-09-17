@@ -1,11 +1,11 @@
 ---
 layout: note-image
 parent: ..
-title: ufpe-2020
+title: vila-do-arruado-2020
 date: 2023-09-17
-metatitle: Imagem UFPE
-categories: imagem, ufpe
-description: UFPE
+metatitle: Vila do Arruado
+categories: imagem, vila do arruado, ufpe
+description: Vila do Arruado
 year: 2020
 cover-image: https://www.historiadorecife.com/images/cover.jpg
 ---

@@ -15,11 +15,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ page.metatitle }}</title>
+    <title>{{ page.metatitle }} ({{ page.year }})</title>
 
     <meta name="description" content="{{page.description}}" />
     <meta name="theme-color" content="#EEEEEE" />
-    <meta property="og:title" content="{{page.metatitle}}" />
+    <meta property="og:title" content="{{ page.metatitle }} ({{ page.year }})" />
     <meta property="og:image" content="{{page.cover-image}}" />
     <meta property="og:type" content="website" />
 
@@ -27,7 +27,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="henriquejandrade.github.io">
     <meta name="twitter:creator" content="@rickhenrique">
-    <meta name="twitter:title" content="{{ page.metatitle }}">
+    <meta name="twitter:title" content="{{ page.metatitle }} ({{ page.year }})">
     <meta name="twitter:description" content="{{ page.description }}">
     <meta name="twitter:image" content="{{ page.cover-image }}">
 
@@ -44,12 +44,12 @@
                 src="https://www.historiadorecife.com/icons/symbols/arrow_left.png" />
         </div>
         <div id="top-bar-title">
-            <p>{{ page.metatitle }}</p>
+            <p>{{ page.metatitle }} ({{ page.year }})</p>
         </div>
     </div>
     <div id="page-content">
         <div id="main-div">
-            <img src="/notas/imagens/{{ page.title }}.jpg" alt="{{ page.metatitle }}" />
+            <img src="/notas/imagens/{{ page.title }}.jpg" alt="{{ page.metatitle }} ({{ page.year }})" />
             <blockquote>{{ page.description}} </blockquote>
         </div>
     </div>

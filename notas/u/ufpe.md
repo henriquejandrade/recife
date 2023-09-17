@@ -9,12 +9,10 @@ description: UFPE
 cover-image: https://www.historiadorecife.com/images/cover.jpg
 ---
 
-A UFPE EM 70 ANOS 👇🎓
-
-1951 // 1974 // 2013 // 2020
-
+## Imagens
 {% for page in site.pages %}
 {% if page.categories contains "imagem" and page.categories contains "ufpe" %}
+### {{ page. metatitle }}:
 ![{{ page.title }}](/notas/imagens/{{ page.title }}.jpg)
 {% endif %}
 {% endfor %}
