@@ -24,6 +24,6 @@ No coração do campus, a vila dos trabalhadores do famoso Engenho "do Meio" que
 {% for page in site.pages %}
 {% if page.categories contains "imagem" and page.categories contains "vila do arruado" %}
 ### {{ page.year }}
-![{{ page.title }}](/notas/imagens/{{ page.title }}.png)
+![{{ page.title }}](/notas/imagens/{{ page.title }}.jpg)
 {% endif %}
 {% endfor %}
