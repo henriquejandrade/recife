@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: note
 parent: ..
 title: UFPE
 date: 2023-09-13
@@ -15,10 +15,6 @@ A UFPE EM 70 ANOS 👇🎓
 
 {% for page in site.pages %}
 {% if page.categories contains "imagem" and page.categories contains "ufpe" %}
-![{{ page.title }}](/notas/imagems/{{ page.title }}.jpg)
+![{{ page.title }}](/notas/imagens/{{ page.title }}.jpg)
 {% endif %}
 {% endfor %}
-
-![1954](/notas/imagens/ufpe-1954.jpg)
-![2013](/notas/imagens/ufpe-2013.jpg)
-![2020](/notas/imagens/ufpe-2020.jpg)

@@ -2,20 +2,56 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNZJJ1VFTW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'G-PNZJJ1VFTW');
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ page.metatitle }}</title>
+
+  <meta name="description" content="{{page.description}}" />
+  <meta name="theme-color" content="#EEEEEE" />
+  <meta property="og:title" content="{{page.metatitle}}" />
+  <meta property="og:image" content="{{page.cover-image}}" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="henriquejandrade.github.io">
+  <meta name="twitter:creator" content="@rickhenrique">
+  <meta name="twitter:title" content="{{ page.metatitle }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:image" content="{{ page.cover-image }}">
+
+  <link href="../style/note.css" rel="stylesheet">
+  
+  <script src="../scripts/3rdparty/jquery-3.4.1.min.js"></script>
+  <script src="../scripts/pages.js"></script>
 </head>
 
 <body>
-    <div id="page-content">
-        <div id="main-div">
-
-            <h1>Horizontes do Site</h1>
-            <p>
-                Após mais uma mudança, agora de blog pessoal para site <i>ponto com</i>, penso o que fazer agora. De um lado a universidade me cobra um
-            </p>
-
-        </div>
+  <div id="top-bar">
+    <div id="icon-top-bar" class="nav-button">
+      <img id="icon-img-top-bar" class="icon clickable" href="{{ page.parent }}"
+        src="https://www.historiadorecife.com/icons/symbols/arrow_left.png" />
     </div>
+    <div id="top-bar-title">
+      <p>{{ page.metatitle }}</p>
+    </div>
+  </div>
+  <div id="page-content">
+    <div id="main-div">
+      <img class="illustration" src="https://www.historiadorecife.com/notas/imagens/ufpe-1951.jpg">
+    </div>
+  </div>
 </body>
 
 </html>

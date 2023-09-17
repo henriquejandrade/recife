@@ -31,7 +31,7 @@
   <meta name="twitter:description" content="{{ page.description }}">
   <meta name="twitter:image" content="{{ page.cover-image }}">
 
-  <link href="{{ site.styles }}/blog.css" rel="stylesheet">
+  <link href="{{ site.styles }}/note.css" rel="stylesheet">
   
   <script src="{{ site.scripts }}/3rdparty/jquery-3.4.1.min.js"></script>
   <script src="{{ site.scripts }}/pages.js"></script>
@@ -49,8 +49,6 @@
   </div>
   <div id="page-content">
     <div id="main-div">
-      <h1>{{ page.metatitle }}</h1>
-      <p style="font-size:0.8em">{{ page.date | date: "%d/%m/%Y" }}</p>
       {{ content }}
     </div>
   </div>
