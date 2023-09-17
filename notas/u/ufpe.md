@@ -2,7 +2,7 @@
 layout: note
 parent: ..
 title: UFPE
-date: 2023-09-17
+date: 2023-09-13
 metatitle: 🏫 UFPE
 categories: nota
 description: UFPE

@@ -12,7 +12,7 @@ cover-image: https://www.historiadorecife.com/images/cover.jpg
 O hipódromo da Madalena foi fundado em 1859 e toca os bairros do Cordeiro, Zumbi, Madalena e Bongi. Ele se registrou ao longo do tempo assim:
 
 # Imagens
-{% for page in site.pages %}
+{% for page in site.pages reversed %}
 {% if page.categories contains "imagem" and page.categories contains "jockey club" %}
 ### {{ page.year }}
 ![{{ page.title }}](/notas/imagens/{{ page.title }}.jpg)
