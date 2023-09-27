@@ -2,56 +2,64 @@
 <html>
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNZJJ1VFTW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-PNZJJ1VFTW');
-  </script>
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>{{ page.metatitle }}</title>
-
-  <meta name="description" content="{{page.description}}" />
-  <meta name="theme-color" content="#EEEEEE" />
-  <meta property="og:title" content="{{page.metatitle}}" />
-  <meta property="og:image" content="{{page.cover-image}}" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter Meta -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="henriquejandrade.github.io">
-  <meta name="twitter:creator" content="@rickhenrique">
-  <meta name="twitter:title" content="{{ page.metatitle }}">
-  <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{{ page.cover-image }}">
-
-  <link href="../style/note.css" rel="stylesheet">
-  
   <script src="../scripts/3rdparty/jquery-3.4.1.min.js"></script>
-  <script src="../scripts/pages.js"></script>
+
+  <style>
+    div#images {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    div#images img {
+      position: absolute;
+      height: 400pt;
+    }
+
+    div#slider {
+      position: absolute;
+      top: 400pt;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="top-bar">
-    <div id="icon-top-bar" class="nav-button">
-      <img id="icon-img-top-bar" class="icon clickable" href="{{ page.parent }}"
-        src="https://www.historiadorecife.com/icons/symbols/arrow_left.png" />
-    </div>
-    <div id="top-bar-title">
-      <p>{{ page.metatitle }}</p>
-    </div>
+  <div id="images">
+    <img id="i1951" src="imagens/jockey-club-1951.jpg" />
+    <img id="i1974" src="imagens/jockey-club-1974.jpg" />
+    <img id="i2021" src="imagens/jockey-club-2021.jpg" />
   </div>
-  <div id="page-content">
-    <div id="main-div">
-      <img class="illustration" src="https://www.historiadorecife.com/notas/imagens/ufpe-1951.jpg">
+
+  <div id="slider">
+    <div class="slidecontainer">
+      <input type="range" value="0" min="0" max="100" id="myRange" />
     </div>
   </div>
 </body>
+
+<script>
+  var slider = $("#myRange");
+  var image0 = $("img#i1951");
+  var image1 = $("img#i1974");
+  var image2 = $("img#i2021");
+
+  slider.on("input", function () {
+    var value = slider.val() / 100.0;
+
+    var array = $("#images img");
+    var count = array.length;
+    var step = 1 / count;
+
+    var index = Math.floor(value / step);
+    console.log(index);
+
+    var result = (value - (index * step)) / step;
+
+    array[index] = 0;
+    array[index + 1].css("opacity", result);
+  });
+
+  image.css("opacity", 0)
+</script>
 
 </html>
