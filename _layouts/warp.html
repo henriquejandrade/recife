@@ -36,30 +36,6 @@
     <script src="{{ site.scripts }}/3rdparty/jquery-3.4.1.min.js"></script>
     <script src="{{ site.scripts }}/pages.js"></script>
 
-    <script>
-        var slider = $("#myRange");
-        var array = $("#images p img");
-
-        for (let i = 0; i < array.length; i++) {
-            $(array[i]).css("opacity", 0);
-        }
-
-        $(array[0]).css("opacity", 1);
-
-        slider.on("input", function () {
-            var value = slider.val() / 100.0;
-
-            var count = array.length - 1;
-            var step = 1 / count;
-
-            $(array[0]).css("opacity", 1);
-
-            var index = Math.floor(value / step);
-            var result = (value - (index * step)) / step;
-            $(array[index + 1]).css("opacity", result);
-        });
-    </script>
-
     <style>
         div#images {
             position: absolute;
@@ -120,6 +96,30 @@
     <div id="slider">
         <input type="range" value="0" min="0" max="100" id="myRange" />
     </div>
+
+    <script>
+        var slider = $("#myRange");
+        var array = $("#images p img");
+
+        for (let i = 0; i < array.length; i++) {
+            $(array[i]).css("opacity", 0);
+        }
+
+        $(array[0]).css("opacity", 1);
+
+        slider.on("input", function () {
+            var value = slider.val() / 100.0;
+
+            var count = array.length - 1;
+            var step = 1 / count;
+
+            $(array[0]).css("opacity", 1);
+
+            var index = Math.floor(value / step);
+            var result = (value - (index * step)) / step;
+            $(array[index + 1]).css("opacity", result);
+        });
+    </script>
 </body>
 
 </html>
