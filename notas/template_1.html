@@ -4,6 +4,11 @@
 <head>
   <script src="../scripts/3rdparty/jquery-3.4.1.min.js"></script>
 
+  <link href="../style/note.css" rel="stylesheet">
+
+  <script src="../scripts/3rdparty/jquery-3.4.1.min.js"></script>
+  <script src="../scripts/pages.js"></script>
+
   <style>
     div#images {
       position: absolute;
@@ -12,6 +17,15 @@
       right: 0;
       bottom: 50pt;
       background-color: blue;
+    }
+
+    div#images p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0;
     }
 
     div#images img {
@@ -46,10 +60,18 @@
 
 <body>
   <div id="images">
-    <img id="i1951" src="imagens/ufpe-1951.jpg" />
-    <img id="i1951" src="imagens/ufpe-1954.jpg" />
-    <img id="i1974" src="imagens/ufpe-2013.jpg" />
-    <img id="i2021" src="imagens/ufpe-2020.jpg" />
+    <p>
+      <img src="imagens/ufpe-1951.jpg" />
+    </p>
+    <p>
+      <img src="imagens/ufpe-1954.jpg" />
+    </p>
+    <p>
+      <img src="imagens/ufpe-2013.jpg" />
+    </p>
+    <p>
+      <img src="imagens/ufpe-2020.jpg" />
+    </p>
   </div>
 
   <div id="slider">
