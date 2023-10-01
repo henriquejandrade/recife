@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="../scripts/3rdparty/jquery-3.4.1.min.js"></script>
+
+  <style>
+    div#images {
+      position: absolute;
+      top: 50pt;
+      left: 0;
+      right: 0;
+      bottom: 50pt;
+      background-color: blue;
+    }
+
+    div#images img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+    }
+
+    div#slider {
+      position: absolute;
+      left: 0pt;
+      right: 0pt;
+      bottom: 0pt;
+      height: 50pt;
+    }
+
+    #slider {
+      background-color: red;
+    }
+
+    #slider input {
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      /* width: 99%; */
+      height: 50pt;
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="images">
+    <img id="i1951" src="imagens/ufpe-1951.jpg" />
+    <img id="i1951" src="imagens/ufpe-1954.jpg" />
+    <img id="i1974" src="imagens/ufpe-2013.jpg" />
+    <img id="i2021" src="imagens/ufpe-2020.jpg" />
+  </div>
+
+  <div id="slider">
+    <input type="range" value="0" min="0" max="100" id="myRange" />
+  </div>
+</body>
+
+<script>
+  var slider = $("#myRange");
+  var array = $("#images img");
+
+  for (let i = 0; i < array.length; i++) {
+    $(array[i]).css("opacity", 0);
+  }
+
+  $(array[0]).css("opacity", 1);
+
+  slider.on("input", function () {
+    var value = slider.val() / 100.0;
+
+    var count = array.length - 1;
+    var step = 1 / count;
+
+    $(array[0]).css("opacity", 1);
+
+    var index = Math.floor(value / step);
+    var result = (value - (index * step)) / step;
+    $(array[index + 1]).css("opacity", result);
+
+    // console.log(index);
+  });
+</script>
+
+</html>

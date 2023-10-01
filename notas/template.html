@@ -1,65 +1,14 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-  <script src="../scripts/3rdparty/jquery-3.4.1.min.js"></script>
-
-  <style>
-    div#images {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    div#images img {
-      position: absolute;
-      height: 400pt;
-    }
-
-    div#slider {
-      position: absolute;
-      top: 400pt;
-    }
-  </style>
+    <!-- Processing -->
+    <script src="../scripts/3rdparty/p5.min.js"></script>
+    <script src="p5js/sketch.js"></script>
 </head>
 
 <body>
-  <div id="images">
-    <img id="i1951" src="imagens/jockey-club-1951.jpg" />
-    <img id="i1974" src="imagens/jockey-club-1974.jpg" />
-    <img id="i2021" src="imagens/jockey-club-2021.jpg" />
-  </div>
-
-  <div id="slider">
-    <div class="slidecontainer">
-      <input type="range" value="0" min="0" max="100" id="myRange" />
+    <div id="screen">
     </div>
-  </div>
 </body>
-
-<script>
-  var slider = $("#myRange");
-  var image0 = $("img#i1951");
-  var image1 = $("img#i1974");
-  var image2 = $("img#i2021");
-
-  slider.on("input", function () {
-    var value = slider.val() / 100.0;
-
-    var array = $("#images img");
-    var count = array.length;
-    var step = 1 / count;
-
-    var index = Math.floor(value / step);
-    console.log(index);
-
-    var result = (value - (index * step)) / step;
-
-    array[index] = 0;
-    array[index + 1].css("opacity", result);
-  });
-
-  image.css("opacity", 0)
-</script>
 
 </html>
