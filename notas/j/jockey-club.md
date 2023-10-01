@@ -9,7 +9,7 @@ description: Jockey Club de Pernambuco no tempo
 cover-image: https://www.historiadorecife.com/images/cover.jpg
 ---
 
-{% for page in site.pages reversed %}
+{% for page in site.pages %}
 {% if page.categories contains "imagem" and page.categories contains "warp" and page.categories contains "jockey club" %}
 <img src="/notas/imagens/{{ page.title }}.jpg" />
 {% endif %}
