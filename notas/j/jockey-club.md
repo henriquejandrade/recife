@@ -6,7 +6,7 @@ date: 2023-09-17
 metatitle: 🏇 Jockey Club de Pernambuco
 categories: nota
 description: Jockey Club de Pernambuco no tempo
-cover-image: https://www.historiadorecife.com/images/cover.jpg
+cover-image: https://www.historiadorecife.com/notas/imagens/jockey-club-2021.jpg
 ---
 
 {% for page in site.pages %}

@@ -1,29 +1,16 @@
 ---
-layout: note
+layout: warp
 parent: ..
 title: UFPE
 date: 2023-09-13
 metatitle: 🏫 UFPE
 categories: nota
 description: UFPE
-cover-image: https://www.historiadorecife.com/images/cover.jpg
+cover-image: https://www.historiadorecife.com/notas/imagens/ufpe-2020.jpg
 ---
 
-# Imagens
-## Campus
 {% for page in site.pages %}
-{% if page.categories contains "imagem" and page.categories contains "ufpe" %}
-### {{ page.year }}
-![{{ page.title }}](/notas/imagens/{{ page.title }}.jpg)
-{% endif %}
-{% endfor %}
-
-## Vila do Arruado
-No coração do campus, a vila dos trabalhadores do famoso Engenho "do Meio" que deu nome ao bairro, resiste hoje a vila do Arruado.
-
-{% for page in site.pages %}
-{% if page.categories contains "imagem" and page.categories contains "vila do arruado" %}
-### {{ page.year }}
-![{{ page.title }}](/notas/imagens/{{ page.title }}.jpg)
+{% if page.categories contains "imagem" and page.categories contains "warp" and page.categories contains "ufpe" %}
+<img src="/notas/imagens/{{ page.title }}.jpg" />
 {% endif %}
 {% endfor %}
