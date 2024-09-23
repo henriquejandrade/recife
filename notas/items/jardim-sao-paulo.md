@@ -5,7 +5,7 @@ title: Jardim São Paulo
 date: 2023-10-04
 metatitle: 🗺️ Jardim São Paulo
 categories: nota
-description: Jardim São Paulo
+description: Mapas históricos do bairro de Jardim São Paulo
 cover-image: https://www.historiadorecife.com/notas/imagens/jardim-sao-paulo-1978.png
 ---
 
