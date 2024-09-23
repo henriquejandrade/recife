@@ -1,6 +1,6 @@
 ---
 layout: note-image
-parent: ..
+parent: ../notas
 title: jockey-club-2021
 date: 2023-09-17
 metatitle: Imagem Jockey Club

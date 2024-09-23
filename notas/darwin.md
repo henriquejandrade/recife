@@ -1,6 +1,6 @@
 ---
 layout: note
-parent: ..
+parent: ../notas
 title: Darwin
 date: 2023-09-17
 metatitle: 👤 Charles Darwin

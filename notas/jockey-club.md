@@ -1,6 +1,6 @@
 ---
 layout: warp
-parent: ..
+parent: ../notas
 title: Jockey Club de Pernambuco
 date: 2023-09-17
 metatitle: 🏇 Jockey Club de Pernambuco

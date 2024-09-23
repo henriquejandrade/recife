@@ -1,6 +1,6 @@
 ---
 layout: note-image
-parent: ..
+parent: ../notas
 title: vila-do-arruado-1954
 date: 2023-09-17
 metatitle: Vila do Arruado

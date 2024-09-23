@@ -1,6 +1,6 @@
 ---
 layout: warp
-parent: ..
+parent: ../notas
 title: Vila do Arruado
 date: 2023-09-17
 metatitle: 🏡 Vila do Arruado

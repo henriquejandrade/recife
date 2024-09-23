@@ -1,6 +1,6 @@
 ---
 layout: warp
-parent: ..
+parent: ../notas
 title: Hospital Português
 date: 2023-10-04
 metatitle: 🏥 Hospital Português

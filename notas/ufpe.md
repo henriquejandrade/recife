@@ -1,6 +1,6 @@
 ---
 layout: warp
-parent: ..
+parent: ../notas
 title: UFPE
 date: 2023-09-13
 metatitle: 🏫 UFPE

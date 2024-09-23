@@ -1,6 +1,6 @@
 ---
 layout: note-image
-parent: ..
+parent: ../notas
 title: hospital-portugues-2017
 date: 2023-10-04
 metatitle: Hospital Português
